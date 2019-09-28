@@ -25,7 +25,33 @@ const Home = () => {
           });
    };
     return (
-        <h1>Home</h1>
+        <React.Fragment>
+            <div className="row">
+                <div className="col-8">
+                    <h1>Users</h1>
+                </div>
+            </div>
+            <table className="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    { users.map(user => (
+                        <tr key={user.id}>
+                            <td>{user.id}</td>
+                            <td>{user.name}</td>
+                            <td>{user.email}</td>
+                            <td>password</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </React.Fragment>
     );
 };
 
