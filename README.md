@@ -10,12 +10,12 @@ Stuff - aplication for saving your stuff found on the Internet.
 4.  Open httpd-vhosts.conf and at the end add following code:
     ```
     <VirtualHost *:80>
-    DocumentRoot "C:/xampp/htdocs/stuff/public"
+    DocumentRoot "C:/xampp/htdocs/stuff-backend/public"
     ServerName stuff.test
     </VirtualHost>
     ```
 5.  Clone this repo into C:/xampp/htdocs
-6.  In console cd into stuff folder
+6.  In console cd into stuff-backend folder
 7.  In console run ``` composer install ```
 8.  In console run ``` npm install ```
 9.  In XAMPP start Apache and MySQL
