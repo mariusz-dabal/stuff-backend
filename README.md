@@ -18,6 +18,7 @@ Stuff - aplication for saving your stuff found on the Internet.
 6.  In console cd into stuff folder
 7.  In console run ``` composer install ```
 8.  In console run ``` npm install ```
-9.  Go to http://localhost/
-10.  Strat adding your part ;)
+9.  In XAMPP start Apache and MySQL
+10.  Go to http://localhost/
+11.  Strat adding your part ;)
   
