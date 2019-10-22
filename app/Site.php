@@ -8,22 +8,15 @@ class Site extends Model
 {
     protected $guarded = [];
     protected $attributes = [
-        'size_id' => 2,
-        'status_id' => 1,
+        'important' => 1,
     ];
 
-    public function user () 
+    public function user ()
     {
         return $this->belongsTo('App\User');
     }
 
-    public function size ()
-    {
-        return $this->belongsTo('App\Size');
-    }
-
-    public function status ()
-    {
-        return $this->belongsTo('App\Status');
+    public function group () {
+        return $this->belongsTo('App\Group');
     }
 }

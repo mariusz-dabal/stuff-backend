@@ -76445,8 +76445,8 @@ var Store = function Store(props) {
 
   var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
       _useState4 = _slicedToArray(_useState3, 2),
-      category = _useState4[0],
-      setCategory = _useState4[1];
+      group = _useState4[0],
+      setGroup = _useState4[1];
 
   var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
       _useState6 = _slicedToArray(_useState5, 2),
@@ -76465,35 +76465,28 @@ var Store = function Store(props) {
 
   var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
       _useState12 = _slicedToArray(_useState11, 2),
-      thumbnail = _useState12[0],
-      setThumbnail = _useState12[1];
+      image = _useState12[0],
+      setImage = _useState12[1];
 
   var _useState13 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('1'),
       _useState14 = _slicedToArray(_useState13, 2),
-      size = _useState14[0],
-      setSize = _useState14[1];
+      status = _useState14[0],
+      setStatus = _useState14[1];
 
-  var _useState15 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('1'),
+  var _useState15 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(localStorage.getItem('access_token')),
       _useState16 = _slicedToArray(_useState15, 2),
-      status = _useState16[0],
-      setStatus = _useState16[1];
-
-  var _useState17 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(localStorage.getItem('access_token')),
-      _useState18 = _slicedToArray(_useState17, 2),
-      token = _useState18[0],
-      setToken = _useState18[1];
+      token = _useState16[0],
+      setToken = _useState16[1];
 
   var handleSubmit = function handleSubmit(e) {
     e.preventDefault();
     var formData = new FormData();
-    formData.append("parent_id", parseInt(parent));
-    formData.append("category_id", parseInt(category));
+    formData.append("group_id", parseInt(group));
     formData.append("name", name);
     formData.append("url", url);
     formData.append("notes", notes);
-    formData.append("thumbnail", thumbnail);
-    formData.append("size_id", parseInt(size));
-    formData.append("status_id", parseInt(status));
+    formData.append("image", image);
+    formData.append("important", parseInt(status));
     fetch('/api/sites', {
       method: "post",
       headers: {
@@ -76515,28 +76508,15 @@ var Store = function Store(props) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "form-group"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    htmlFor: "inputParent"
-  }, "Parent ID"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    htmlFor: "inputGroup"
+  }, "Group ID"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "number",
     className: "form-control",
-    id: "inputParent",
-    placeholder: "parent id",
-    value: parent,
+    id: "inputGroup",
+    placeholder: "group id",
+    value: group,
     onChange: function onChange(e) {
-      return setParent(e.target.value);
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    htmlFor: "inputCategory"
-  }, "Category ID"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    type: "number",
-    className: "form-control",
-    id: "inputCategory",
-    placeholder: "Category id",
-    value: category,
-    onChange: function onChange(e) {
-      return setCategory(e.target.value);
+      return setGroup(e.target.value);
     }
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "form-group"
@@ -76588,31 +76568,14 @@ var Store = function Store(props) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "file",
     className: "custom-file-input",
-    id: "inputThumbnail",
+    id: "inputImage",
     onChange: function onChange(e) {
-      return setThumbnail(e.target.files[0]);
+      return setImage(e.target.files[0]);
     }
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     className: "custom-file-label",
-    htmlFor: "inputThumbnail"
+    htmlFor: "inputImage"
   }, "Choose file"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "form-group"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    htmlFor: "inputSize"
-  }, "Size"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-    className: "custom-select mr-sm-2",
-    id: "inputSize",
-    onChange: function onChange(e) {
-      return setSize(e.target.value);
-    },
-    value: size
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-    value: "1"
-  }, "Small"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-    value: "2"
-  }, "Medium"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-    value: "3"
-  }, "Large"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "form-group"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     htmlFor: "inputStatus"
@@ -76625,11 +76588,9 @@ var Store = function Store(props) {
     value: status
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
     value: "1"
-  }, "Normal"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-    value: "2"
   }, "Important"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-    value: "3"
-  }, "To Read"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    value: "0"
+  }, "Normal"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "submit",
     className: "btn btn-primary"
   }, "Submit"));
@@ -76657,8 +76618,8 @@ var Store = function Store(props) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\stuff\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\stuff\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\projects\code\stuff\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\projects\code\stuff\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

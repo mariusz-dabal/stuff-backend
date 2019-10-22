@@ -83,7 +83,7 @@ const Sites = () => {
                                     <button className="btn btn-light"><FontAwesomeIcon icon={faPencilAlt} /></button>
                                 </Link>
                                 </td>
-                            <td><button 
+                            <td><button
                                     className="btn btn-light"
                                     onClick={() => handleDelete(site.id)}
                                     >

@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use Illuminate\Http\Request;
 use App\Site;
 use App\Http\Resources\SiteResource;
+use App\Http\Resources\CategoryResource;
+use App\Http\Resources\GroupResource;
 use Symfony\Component\Console\Input\Input;
 use Illuminate\Support\Facades\Storage;
 
@@ -17,9 +20,9 @@ class SiteController extends Controller
      */
     public function index()
     {
-        SiteResource::withoutWrapping();
-        $sites = Site::where('user_id', auth()->user()->id)->get();
-        return SiteResource::collection($sites);
+        GroupResource::withoutWrapping();
+        $groups = Category::where('user_id', auth()->user()->id)->get();
+        return GroupResource::collection($groups);
     }
 
     /**
@@ -31,29 +34,25 @@ class SiteController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'parent_id' => 'nullable|numeric',
-            'category_id' => 'required|numeric',
+            'group_id' => 'required|numeric',
             'name' => 'required|max:255',
             'url' => 'required',
             'notes' => 'nullable',
-            'thumbnail' => 'nullable',
-            'size_id' => 'nullable|numeric',
-            'status_id' => 'nullable|numeric',
+            'image' => 'nullable',
+            'important' => 'boolean|nullable',
         ]);
 
         $validatedData['user_id'] = auth()->user()->id;
+        $favicon = 'https://www.google.com/s2/favicons?domain=' . preg_replace('#^https?://#', '', rtrim($validatedData['url'],'/'));
+        $validatedData['favicon'] = $favicon;
 
-        if (is_null($validatedData['size_id'])) {
-            $validatedData['size_id'] = '2';
+        if (is_null($validatedData['important'])) {
+            $validatedData['important'] = '1';
         }
 
-        if (is_null($validatedData['status_id'])) {
-            $validatedData['status_id'] = '1';
-        }
-
-        if (!is_null($request->file('thumbnail'))) {
-            $path = $request->file('thumbnail')->store('public/photos');
-            $validatedData['thumbnail'] = substr($path, 13);
+        if (!is_null($request->file('image'))) {
+            $path = $request->file('image')->store('public/photos');
+            $validatedData['image'] = substr($path, 13);
         }
 
         $site = Site::create($validatedData);
@@ -71,7 +70,7 @@ class SiteController extends Controller
         SiteResource::withoutWrapping();
         $site = Site::findOrFail($id);
         if ($site->user_id !== auth()->user()->id) {
-            return response('Unauthorized', 401);
+            return response()->json('Unauthorized', 401); //zmienić na json
         }
         return new SiteResource($site);
     }
@@ -87,31 +86,27 @@ class SiteController extends Controller
     {
         $site = Site::findOrFail($id);
         if ($site->user_id !== auth()->user()->id) {
-            return response('Unauthorized', 401);
+            return response()->json('Unauthorized', 401);
         }
 
              $request->validate([
-            'parent_id' => 'nullable|numeric',
-            'category_id' => 'required|numeric',
-            'name' => 'required|max:255',
-            'url' => 'required',
-            'notes' => 'nullable',
-            'thumbnail' => 'nullable',
-            'size_id' => 'nullable|numeric',
-            'status_id' => 'nullable|numeric',
+                'group_id' => 'required|numeric',
+                'name' => 'required|max:255',
+                'url' => 'required',
+                'notes' => 'nullable',
+                'image' => 'nullable',
+                'important' => 'boolean|nullable',
         ]);
 
-        if (isset($request->parent_id)) $site->parent_id = $request->parent_id;
-        if (isset($request->category_id)) $site->category_id = $request->category_id;
+        if (isset($request->group_id)) $site->group_id = $request->group_id;
         if (isset($request->name)) $site->name = $request->name;
         if (isset($request->url)) $site->url = $request->url;
         if (isset($request->notes)) $site->notes = $request->notes;
-        if (!is_null($request->file('thumbnail'))) {
-            $path = $request->file('thumbnail')->store('public/photos');
-            $site->thumbnail = substr($path, 13);
+        if (!is_null($request->file('image'))) {
+            $path = $request->file('image')->store('public/photos');
+            $site->image = substr($path, 13);
         }
-        if (isset($request->size_id)) $site->size_id = $request->size_id;
-        if (isset($request->status_id)) $site->status_id = $request->status_id;
+        if (isset($request->important)) $site->important = $request->important;
         $site->save();
 
         return response()->json($site, 200);
@@ -127,11 +122,11 @@ class SiteController extends Controller
     {
         $site = Site::findOrFail($id);
         if ($site->user_id !== auth()->user()->id) {
-            return response('Unauthorized', 401);
+            return response()->json('Unauthorized', 401);
         }
-     
+
         $site->delete();
 
-        return response()->json($site, 200);
+        return response()->json('Site has been deleted', 200);
     }
 }
