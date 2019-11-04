@@ -25,7 +25,18 @@ Route::middleware('auth:api')->group(function () {
 
     Route::post('/logout', 'AuthController@logout');
 
+    // Categories
+    Route::resource('categories', 'CategoriesController');
+    Route::get('categories/{category}/groups', 'CategoriesController@categoryGroups');
+    Route::get('categories/{category}/groups/{group}/sites', 'CategoriesController@categoryGroupsSites');
+    Route::get('categories/{category}/sites', 'CategoriesController@categorySites');
+
+    // Groups
+    Route::resource('groups', 'GroupsController');
+
+    // Sites
     Route::resource('sites', 'SiteController');
+
 });
 
 

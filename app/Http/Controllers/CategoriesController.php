@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Group;
+use App\Site;
+use App\Http\Resources\CategoryResource;
+use App\Http\Resources\GroupResource;
+use App\Http\Resources\SiteResource;
 use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
@@ -16,7 +21,7 @@ class CategoriesController extends Controller
     {
         CategoryResource::withoutWrapping();
         $categories = Category::where('user_id', auth()->user()->id)->get();
-        return SiteResource::collection($categories);
+        return CategoryResource::collection($categories);
     }
 
     /**
@@ -48,7 +53,57 @@ class CategoriesController extends Controller
      */
     public function show($id)
     {
-        //
+        CategoryResource::withoutWrapping();
+
+        $category = Category::find($id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+
+        return new CategoryResource($category);
+    }
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function categoryGroups($id)
+    {
+        $category = Category::find($id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+        GroupResource::withoutWrapping();
+        $groups = Group::where('category_id', $id)->get();
+
+        return GroupResource::collection($groups);
+    }
+
+    public function categoryGroupsSites($category_id, $group_id)
+    {
+        $category = Category::find($category_id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+
+        SiteResource::withoutWrapping();
+        $sites = Site::where('group_id', $group_id)->get();
+
+        return SiteResource::collection($sites);
+    }
+
+    public function categorySites($category_id)
+    {
+        $category = Category::find($category_id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+
+        SiteResource::withoutWrapping();
+        $sites = $category->sites;
+
+        return SiteResource::collection($sites);
     }
 
     /**

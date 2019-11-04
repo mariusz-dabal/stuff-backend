@@ -3,13 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Category;
-use Illuminate\Http\Request;
 use App\Site;
+use App\User;
+use Illuminate\Http\Request;
 use App\Http\Resources\SiteResource;
 use App\Http\Resources\CategoryResource;
 use App\Http\Resources\GroupResource;
 use Symfony\Component\Console\Input\Input;
 use Illuminate\Support\Facades\Storage;
+use phpDocumentor\Reflection\Types\Collection;
 
 class SiteController extends Controller
 {
@@ -20,9 +22,23 @@ class SiteController extends Controller
      */
     public function index()
     {
-        GroupResource::withoutWrapping();
-        $groups = Category::where('user_id', auth()->user()->id)->get();
-        return GroupResource::collection($groups);
+        $categories = Category::where('user_id', auth()->user()->id)->get();
+
+        $sites = $categories->map(function($category) {
+           return $category->sites;
+        });
+
+        $sites = collect();
+
+        foreach ($categories as $key => $category) {
+            $sites = $sites->merge($category->sites);
+        }
+
+        // dd($sites);
+
+        SiteResource::withoutWrapping();
+
+        return SiteResource::collection($sites);
     }
 
     /**
@@ -70,7 +86,7 @@ class SiteController extends Controller
         SiteResource::withoutWrapping();
         $site = Site::findOrFail($id);
         if ($site->user_id !== auth()->user()->id) {
-            return response()->json('Unauthorized', 401); //zmienić na json
+            return response()->json('Unauthorized', 401);
         }
         return new SiteResource($site);
     }
