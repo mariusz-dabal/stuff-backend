@@ -2,6 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
+use App\Group;
+use App\Site;
+use App\User;
+use App\Http\Resources\CategoryResource;
+use App\Http\Resources\GroupResource;
+use App\Http\Resources\UserResource;
 use Illuminate\Http\Request;
 
 class GroupsController extends Controller
@@ -13,7 +20,11 @@ class GroupsController extends Controller
      */
     public function index()
     {
-        //
+        $groups = User::find(auth()->user()->id)->groups()->get();
+
+        GroupResource::withoutWrapping();
+
+        return GroupResource::collection($groups);
     }
 
     /**

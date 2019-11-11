@@ -38,8 +38,14 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function sites ()
+    public function categories ()
     {
-        return $this->hasMany('App\Site');
-    } 
+        return $this->hasMany('App\Category');
+    }
+
+    public function groups ()
+    {
+        return $this->hasManyThrough('App\Group', 'App\Category');
+    }
+
 }
