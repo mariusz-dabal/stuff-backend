@@ -14,11 +14,6 @@ class GroupResource extends JsonResource
      */
     public function toArray($request)
     {
-        // return [
-        //     'group_id' => $this->id,
-        //     'group_name' =>$this->name,
-        //     'sites' => SiteResource::collection($this->sites),
-        // ];
         return parent::toArray($request);
     }
 }

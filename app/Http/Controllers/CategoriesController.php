@@ -9,6 +9,8 @@ use App\Http\Resources\CategoryResource;
 use App\Http\Resources\GroupResource;
 use App\Http\Resources\SiteResource;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 
 class CategoriesController extends Controller
 {
@@ -25,16 +27,6 @@ class CategoriesController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -42,7 +34,26 @@ class CategoriesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|max:255',
+            'image' => 'nullable|dimensions:max_width=2000,max_height=2000',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json($validator->messages()->first(), 422);
+        }
+
+        $category = new Category;
+
+        $category->user_id = auth()->user()->id;
+        $category->name = $request->name;
+        if ($category->image) {
+            $category->image = $request->file('image')->store('public/images');
+        }
+
+        $category->save();
+
+        return response()->json($category, 200);
     }
 
     /**
@@ -107,17 +118,6 @@ class CategoriesController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -126,7 +126,32 @@ class CategoriesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|max:255',
+            'image' => 'nullable',
+            'image.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json($validator->messages()->first(), 422);
+        }
+
+        $category = Category::find($id);
+
+        $category->user_id = auth()->user()->id;
+        $category->name = $request->name;
+
+        if (is_null($request->image)) {
+            $category->image = null;
+        }
+
+        if ($request->hasFile('image')) {
+            $category->image = $request->file('image')->store('public/images');
+        }
+
+        $category->save();
+
+        return response()->json($category, 200);
     }
 
     /**

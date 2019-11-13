@@ -17,7 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedInteger('user_id');
             $table->string('name');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

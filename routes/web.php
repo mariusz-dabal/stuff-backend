@@ -15,4 +15,6 @@
 //     return view('welcome');
 // });
 
+use Illuminate\Support\Facades\Storage;
+
 Route::view('/{path?}', 'app');
