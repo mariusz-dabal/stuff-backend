@@ -18,8 +18,8 @@ class CreateSitesTable extends Migration
             $table->unsignedInteger('group_id');
             $table->string('name');
             $table->string('url');
-            $table->text('notes');
-            $table->boolean('important');
+            $table->text('notes')->nullable();
+            $table->boolean('important')->nullable();
             $table->timestamps();
         });
     }

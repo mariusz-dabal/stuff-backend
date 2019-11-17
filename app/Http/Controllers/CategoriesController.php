@@ -36,7 +36,7 @@ class CategoriesController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name' => 'required|max:255',
-            'image' => 'nullable',
+            'image' => 'nullable|file',
             'image.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
 
@@ -151,6 +151,9 @@ class CategoriesController extends Controller
 
         return new CategoryResource($category);
     }
+
+//    Category Groups
+
     /**
      * Display the specified resource.
      *
@@ -168,8 +171,6 @@ class CategoriesController extends Controller
 
         return GroupResource::collection($groups);
     }
-
-//    Category Groups
 
     public function storeCategoryGroups(Request $request, $id)
     {
@@ -244,6 +245,82 @@ class CategoriesController extends Controller
 
         return SiteResource::collection($sites);
     }
+
+    public function storeCategoryGroupsSites(Request $request, $category_id, $group_id)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|max:255',
+            'url' => 'required|url',
+            'notes' => 'nullable|string',
+            'important' => 'nullable|boolean'
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json($validator->messages()->first(), 422);
+        }
+
+        $category = Category::findOrFail($category_id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+
+        $group = Group::findOrFail($group_id);
+
+        $site = new Site;
+        $site->group_id = $group->id;
+        $site->name = $request->name;
+        $site->url = $request->url;
+        $site->notes = $request->notes;
+        $site->important = $request->important;
+        $site->save();
+
+        return response()->json($site, 200);
+    }
+
+    public function updateCategoryGroupsSites(Request $request, $category_id, $group_id, $site_id)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'max:255',
+            'url' => 'url',
+            'notes' => 'nullable|string',
+            'important' => 'nullable|boolean'
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json($validator->messages()->first(), 422);
+        }
+
+        $category = Category::findOrFail($category_id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+
+        $site = Site::findOrFail($site_id);
+
+        $site->name = isset($request->name) ? $request->name : $site->name;
+        $site->url = isset($request->url) ? $request ->url : $site->url;
+        $site->notes = isset($request->notes) ? $request->notes : $site->notes;
+        $site->important = isset($request->important) ? $request->important : $site->important;
+        $site->save();
+
+        return response()->json($site, 200);
+    }
+
+    public function destroyCategoryGroupsSites(Request $request, $category_id, $group_id, $site_id)
+    {
+        $category = Category::findOrFail($category_id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+
+        $site = Site::findOrFail($site_id);
+        $site->delete();
+
+        return response()->json($site, 200);
+    }
+
+
+//    Category Sites
 
     public function categorySites($category_id)
     {

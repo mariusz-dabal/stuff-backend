@@ -36,6 +36,9 @@ Route::middleware('auth:api')->group(function () {
 
     // Category Groups Sites
     Route::get('categories/{category}/groups/{group}/sites', 'CategoriesController@categoryGroupsSites');
+    Route::post('categories/{category}/groups/{group}/sites', 'CategoriesController@storeCategoryGroupsSites');
+    Route::put('categories/{category}/groups/{group}/sites/{site}', 'CategoriesController@updateCategoryGroupsSites');
+    Route::delete('categories/{category}/groups/{group}/sites/{site}', 'CategoriesController@destroyCategoryGroupsSites');
 
     // Category Sites
     Route::get('categories/{category}/sites', 'CategoriesController@categorySites');
