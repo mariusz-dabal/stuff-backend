@@ -36,7 +36,8 @@ class CategoriesController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name' => 'required|max:255',
-            'image' => 'nullable|dimensions:max_width=2000,max_height=2000',
+            'image' => 'nullable',
+            'image.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
 
         if ($validator->fails()) {
@@ -47,74 +48,14 @@ class CategoriesController extends Controller
 
         $category->user_id = auth()->user()->id;
         $category->name = $request->name;
-        if ($category->image) {
-            $category->image = $request->file('image')->store('public/images');
+        if ($request->hasFile('image')) {
+            $file = $request->file('image')->store('public/images');
+            $category->image  = Storage::url($file);
         }
 
         $category->save();
 
         return response()->json($category, 200);
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        CategoryResource::withoutWrapping();
-
-        $category = Category::find($id);
-        if ($category->user_id != auth()->user()->id) {
-            return response()->json('Unauthorized', 401);
-        }
-
-        return new CategoryResource($category);
-    }
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function categoryGroups($id)
-    {
-        $category = Category::find($id);
-        if ($category->user_id != auth()->user()->id) {
-            return response()->json('Unauthorized', 401);
-        }
-        GroupResource::withoutWrapping();
-        $groups = Group::where('category_id', $id)->get();
-
-        return GroupResource::collection($groups);
-    }
-
-    public function categoryGroupsSites($category_id, $group_id)
-    {
-        $category = Category::find($category_id);
-        if ($category->user_id != auth()->user()->id) {
-            return response()->json('Unauthorized', 401);
-        }
-
-        SiteResource::withoutWrapping();
-        $sites = Site::where('group_id', $group_id)->get();
-
-        return SiteResource::collection($sites);
-    }
-
-    public function categorySites($category_id)
-    {
-        $category = Category::find($category_id);
-        if ($category->user_id != auth()->user()->id) {
-            return response()->json('Unauthorized', 401);
-        }
-
-        SiteResource::withoutWrapping();
-        $sites = $category->sites;
-
-        return SiteResource::collection($sites);
     }
 
     /**
@@ -136,17 +77,31 @@ class CategoriesController extends Controller
             return response()->json($validator->messages()->first(), 422);
         }
 
-        $category = Category::find($id);
+        $category = Category::findOrFail($id);
+
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
 
         $category->user_id = auth()->user()->id;
         $category->name = $request->name;
 
-        if (is_null($request->image)) {
+        if ($request->image == 'delete') {
+            if (!is_null($category->image)) {
+                $imgSrc = str_replace('/storage/images', 'public/images', $category->image);
+                Storage::delete($imgSrc);
+            }
             $category->image = null;
         }
 
         if ($request->hasFile('image')) {
-            $category->image = $request->file('image')->store('public/images');
+            if (!is_null($category->image)) {
+                $imgSrc = str_replace('/storage/images', 'public/images', $category->image);
+                Storage::delete($imgSrc);
+            }
+
+            $file = $request->file('image')->store('public/images');
+            $category->image  = Storage::url($file);
         }
 
         $category->save();
@@ -162,6 +117,81 @@ class CategoriesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $category = Category::findOrFail($id);
+
+//        dd($category->user_id, auth()->user()->id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+
+        if (!is_null($category->image)) {
+            $imgSrc = str_replace('/storage/images', 'public/images', $category->image);
+            Storage::delete($imgSrc);
+        }
+
+        $category->delete();
+
+        return response()->json($category, 200);
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        CategoryResource::withoutWrapping();
+
+        $category = Category::findOrFail($id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+
+        return new CategoryResource($category);
+    }
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function categoryGroups($id)
+    {
+        $category = Category::findOrFail($id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+        GroupResource::withoutWrapping();
+        $groups = Group::where('category_id', $id)->get();
+
+        return GroupResource::collection($groups);
+    }
+
+    public function categoryGroupsSites($category_id, $group_id)
+    {
+        $category = Category::findOrFail($category_id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+
+        SiteResource::withoutWrapping();
+        $sites = Site::where('group_id', $group_id)->get();
+
+        return SiteResource::collection($sites);
+    }
+
+    public function categorySites($category_id)
+    {
+        $category = Category::findOrFail($category_id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+
+        SiteResource::withoutWrapping();
+        $sites = $category->sites;
+
+        return SiteResource::collection($sites);
     }
 }
