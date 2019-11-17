@@ -169,6 +169,69 @@ class CategoriesController extends Controller
         return GroupResource::collection($groups);
     }
 
+//    Category Groups
+
+    public function storeCategoryGroups(Request $request, $id)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|max:255',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json($validator->messages()->first(), 422);
+        }
+
+        $category = Category::findOrFail($id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+
+        $group = new Group;
+        $group->category_id = $category->id;
+        $group->name = $request->name;
+        $group->save();
+
+        return response()->json($group, 200);
+    }
+
+    public function updateCategoryGroups(Request $request, $category_id, $group_id)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|max:255',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json($validator->messages()->first(), 422);
+        }
+
+        $category = Category::findOrFail($category_id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+
+        $group = Group::findOrFail($group_id);
+        $group->name = $request->name;
+        $group->save();
+
+        return response()->json($group, 200);
+    }
+
+    public function destroyCategoryGroups(Request $request, $category_id, $group_id)
+    {
+
+        $category = Category::findOrFail($category_id);
+        if ($category->user_id != auth()->user()->id) {
+            return response()->json('Unauthorized', 401);
+        }
+
+        $group = Group::findOrFail($group_id);
+        $group->delete();
+
+        return response()->json($group, 200);
+    }
+
+//    Category Groups Sites
+
     public function categoryGroupsSites($category_id, $group_id)
     {
         $category = Category::findOrFail($category_id);

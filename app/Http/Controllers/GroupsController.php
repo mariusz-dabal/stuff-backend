@@ -20,21 +20,11 @@ class GroupsController extends Controller
      */
     public function index()
     {
-        $groups = User::find(auth()->user()->id)->groups()->get();
+        $groups = User::findOrFail(auth()->user()->id)->groups()->get();
 
         GroupResource::withoutWrapping();
 
         return GroupResource::collection($groups);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
     }
 
     /**
@@ -54,18 +44,8 @@ class GroupsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
+    public function show($id)
     {
         //
     }
