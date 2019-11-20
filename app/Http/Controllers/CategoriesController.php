@@ -119,7 +119,6 @@ class CategoriesController extends Controller
     {
         $category = Category::findOrFail($id);
 
-//        dd($category->user_id, auth()->user()->id);
         if ($category->user_id != auth()->user()->id) {
             return response()->json('Unauthorized', 401);
         }
@@ -129,6 +128,12 @@ class CategoriesController extends Controller
             Storage::delete($imgSrc);
         }
 
+        foreach ($category->groups as $group) {
+            foreach ($group->sites as $site) {
+                $site->delete();
+            }
+            $group->delete();
+        }
         $category->delete();
 
         return response()->json($category, 200);
@@ -226,6 +231,10 @@ class CategoriesController extends Controller
         }
 
         $group = Group::findOrFail($group_id);
+
+        foreach ($group->sites as $site) {
+            $site->delete();
+        }
         $group->delete();
 
         return response()->json($group, 200);
