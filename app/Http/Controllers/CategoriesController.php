@@ -22,7 +22,7 @@ class CategoriesController extends Controller
     public function index()
     {
         CategoryResource::withoutWrapping();
-        $categories = Category::where('user_id', auth()->user()->id)->get();
+        $categories = Category::where('user_id', auth()->user()->id)->orderBy('created_at', 'desc')->get();
         return CategoryResource::collection($categories);
     }
 
@@ -167,7 +167,7 @@ class CategoriesController extends Controller
             return response()->json('Unauthorized', 401);
         }
         GroupResource::withoutWrapping();
-        $groups = Group::where('category_id', $id)->get();
+        $groups = Group::where('category_id', $id)->orderBy('created_at', 'desc')->get();
 
         return GroupResource::collection($groups);
     }
@@ -241,7 +241,7 @@ class CategoriesController extends Controller
         }
 
         SiteResource::withoutWrapping();
-        $sites = Site::where('group_id', $group_id)->get();
+        $sites = Site::where('group_id', $group_id)->orderBy('created_at', 'desc')->get();
 
         return SiteResource::collection($sites);
     }
