@@ -22,7 +22,7 @@ class CategoriesController extends Controller
     public function index()
     {
         CategoryResource::withoutWrapping();
-        $categories = Category::where('user_id', auth()->user()->id)->orderBy('created_at', 'desc')->get();
+        $categories = Category::where('user_id', auth()->user()->id)->get();
         return CategoryResource::collection($categories);
     }
 
@@ -119,6 +119,7 @@ class CategoriesController extends Controller
     {
         $category = Category::findOrFail($id);
 
+//        dd($category->user_id, auth()->user()->id);
         if ($category->user_id != auth()->user()->id) {
             return response()->json('Unauthorized', 401);
         }
@@ -128,12 +129,6 @@ class CategoriesController extends Controller
             Storage::delete($imgSrc);
         }
 
-        foreach ($category->groups as $group) {
-            foreach ($group->sites as $site) {
-                $site->delete();
-            }
-            $group->delete();
-        }
         $category->delete();
 
         return response()->json($category, 200);
@@ -172,7 +167,7 @@ class CategoriesController extends Controller
             return response()->json('Unauthorized', 401);
         }
         GroupResource::withoutWrapping();
-        $groups = Group::where('category_id', $id)->orderBy('created_at', 'desc')->get();
+        $groups = Group::where('category_id', $id)->get();
 
         return GroupResource::collection($groups);
     }
@@ -231,10 +226,6 @@ class CategoriesController extends Controller
         }
 
         $group = Group::findOrFail($group_id);
-
-        foreach ($group->sites as $site) {
-            $site->delete();
-        }
         $group->delete();
 
         return response()->json($group, 200);
@@ -250,7 +241,7 @@ class CategoriesController extends Controller
         }
 
         SiteResource::withoutWrapping();
-        $sites = Site::where('group_id', $group_id)->orderBy('created_at', 'desc')->get();
+        $sites = Site::where('group_id', $group_id)->get();
 
         return SiteResource::collection($sites);
     }
@@ -279,8 +270,8 @@ class CategoriesController extends Controller
         $site->group_id = $group->id;
         $site->name = $request->name;
         $site->url = $request->url;
-        $site->notes = $request->notes ?? null;
-        $site->important = $request->important ?? null;
+        $site->notes = $request->notes;
+        $site->important = $request->important;
         $site->save();
 
         return response()->json($site, 200);

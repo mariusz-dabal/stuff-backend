@@ -1,36 +1,30 @@
 import React, { useState } from 'react';
 
 const Store = (props) => {
-    const [parent, setParent] = useState('');
-    const [group, setGroup] = useState('');
     const [name, setName] = useState('');
     const [url, setUrl] = useState('');
     const [notes, setNotes] = useState('');
-    const [image, setImage] = useState(null);
     const [status, setStatus] = useState('1');
     const [token, setToken] = useState(localStorage.getItem('access_token'));
 
     const handleSubmit = e => {
         e.preventDefault();
         const formData = new FormData();
-        formData.append("group_id", parseInt(group));
         formData.append("name", name);
         formData.append("url", url);
         formData.append("notes", notes);
-        formData.append("image", image);
         formData.append("important", parseInt(status));
 
-        fetch('/api/sites', {
+        fetch('/api/categories/6/groups/8/sites', {
             method: "post",
             headers: {
-                "Accept": "application/json",
                 "Authorization" : "Bearer " + token,
             },
             body: formData,
         })
-        // .then(res => res.json())
         .then(res => {
             props.history.push('/sites');
+            console.log('form data:',formData);
             console.log(res);
         }).catch(error => {
             console.log(error);
@@ -40,17 +34,6 @@ const Store = (props) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div className="form-group">
-                <label htmlFor="inputGroup">Group ID</label>
-                <input
-                    type="number"
-                    className="form-control"
-                    id="inputGroup"
-                    placeholder="group id"
-                    value={group}
-                    onChange={e => setGroup(e.target.value)}
-                    />
-            </div>
             <div className="form-group">
                 <label htmlFor="inputName">Name</label>
                 <input
@@ -83,20 +66,6 @@ const Store = (props) => {
                     value={notes}
                     onChange={e => setNotes(e.target.value)}
                     />
-            </div>
-            <div className="input-group mb-3">
-                <div className="input-group-prepend">
-                    <span className="input-group-text">Upload</span>
-                </div>
-                <div className="custom-file">
-                    <input
-                        type="file"
-                        className="custom-file-input"
-                        id="inputImage"
-                        onChange={e => setImage(e.target.files[0])}
-                        />
-                    <label className="custom-file-label" htmlFor="inputImage">Choose file</label>
-                </div>
             </div>
             <div className="form-group">
                 <label htmlFor="inputStatus">Status</label>
