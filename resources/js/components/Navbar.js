@@ -1,40 +1,70 @@
-import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
-const Navbar = (props) => {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <Link to="/">
-                <span className="navbar-brand">/Suff</span>
-            </Link>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
-                <Link to="/login">
-                    <li className="nav-item">
-                        <span className="nav-link">Login</span>
-                    </li>
-                </Link>
-                <Link to="/register">
-                    <li className="nav-item">
-                        <span className="nav-link">Register</span>
-                    </li>
-                </Link>
-                <Link to="/sites">
-                    <li className="nav-item">
-                        <span className="nav-link">Sites</span>
-                    </li>
-                </Link>
-                <Link to="/logout">
-                    <li className="nav-item">
-                        <span className="nav-link">Logout</span>
-                    </li>
-                </Link>
-                </ul>
-            </div>
-        </nav>
-    );
-};
+import React, { useState } from "react";
+import "../../sass/Navbar.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBars,
+  faPowerOff,
+  faUserTag,
+  faBookmark
+} from "@fortawesome/free-solid-svg-icons";
+import { useHistory } from "react-router";
+import axios from "axios";
 
-export default Navbar;
+function HomePanel() {
+  const [isLogged, setIsLogged] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const history = useHistory();
+
+  const handleLogout = () => {
+    const token = localStorage.getItem("access_token");
+    axios({
+      method: "post",
+      url: "https://jimmyspage.pl/api/logout",
+      headers: {
+        Accept: "application/json",
+        Authorization: "Bearer " + token
+      }
+    })
+      .then(res => {
+        localStorage.removeItem("access_token");
+      })
+      .catch(error => console.log(error));
+    history.push("/login");
+  };
+
+  return (
+    <nav className="navbar">
+      <div className="navbar__container">
+        <h1 className="navbar__title-logo" onClick={() => history.push("/")}>
+          Zakładka
+          <FontAwesomeIcon className="navbar__title-icon" icon={faBookmark} />
+        </h1>
+        <div className="navbar__menu">
+          {isMenuOpen && (
+            <>
+              {/* <span className="navbar__user-settings-btn">
+                <FontAwesomeIcon icon={faUserTag} />
+              </span> */}
+              <span className="navbar__logout-btn">
+                <FontAwesomeIcon
+                  icon={faPowerOff}
+                  onClick={() => setIsLogged(false)}
+                />
+              </span>
+            </>
+          )}
+          <span
+            className={`navbar__hamburger-btn ${isMenuOpen && "active-select"}`}
+            onClick={() => setIsMenuOpen(prev => !prev)}
+          >
+            <FontAwesomeIcon icon={faBars} />
+          </span>
+        </div>
+        {!isLogged && handleLogout()}
+      </div>
+    </nav>
+  );
+}
+
+export default HomePanel;

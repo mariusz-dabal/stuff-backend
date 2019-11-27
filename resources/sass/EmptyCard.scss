@@ -1,0 +1,37 @@
+@import './variables.scss';
+
+
+.card{
+  
+  &__empty{
+    opacity: .75;
+    transition: opacity .15s, transform .15s, box-shadow .15s, background .15s;
+    background: rgba($mainUserColor, .1);
+    border-radius: $borderRadius;
+    box-shadow: inset -3px 0 0 -1px white, inset 3px 0 0 -1px white;
+    &:hover{
+      opacity: .85;
+      box-shadow: inset -4px 0 0 -1px white, inset 4px 0 0 -1px white;
+      background: transparent;
+      svg{
+        opacity: 1;
+      }
+    }
+  }
+  &__empty-icon{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &>svg{
+      font-size: 8rem;
+      opacity: .85;
+      transition: opacity .1s;
+    }
+  }
+
+}

@@ -1,0 +1,57 @@
+@import "./variables.scss";
+
+
+@keyframes showPopUpPanel {
+from {
+  opacity: 0;
+}
+to{
+  opacity: 1;
+}
+}
+
+.pop-up-panel{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  border-radius: $borderRadius;
+  box-shadow: $shadowInsetNormal;
+  opacity: 1;
+  background: $BGColorOpLow;
+  animation: showPopUpPanel .1s linear 1;
+  &__container{
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 20px;
+    padding-right: 40px;
+    backdrop-filter: blur(8px);
+    background: rgba(black, .15);
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border-radius: $borderRadius;
+    box-shadow: inset 0 0 2px 2px rgba(black, .15);
+  }
+  &__back-icon{
+    display:default; 
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: rgba($mainTextColor, .5);
+    font-size:  25px;
+    transition: transform .1s ease, color .1s;
+    z-index: 5;
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.25);
+      color: $mainTextColor;
+    }
+  }
+}

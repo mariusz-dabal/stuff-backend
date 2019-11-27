@@ -1,0 +1,106 @@
+@import './variables.scss';
+
+
+.site-pop-up {
+  text-align: center;
+  height: 100%;
+  &__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  &__name, &__url, &__important{
+    font-size: 1.25rem;
+    margin-top: 35px;
+    padding: 0;
+    letter-spacing: 1.25px;
+    @media (min-width: 576px) {
+      font-size: 1.75rem;
+    }
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+    } 
+
+  }
+  &__name-input, &__url-input{
+    align-items: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: $borderRadius;
+    padding: 10px 20px;
+    border: 0;
+    transition: background .1s, box-shadow .1s;
+    background: rgba(white, .85);
+    width: 100%;
+    max-width: 500px;
+    color: grey;
+    box-shadow: inset 1.5px -1.5px 1.5px rgba(black, .4);
+    margin-top: 15px;
+    font-size: 1.25rem;
+    @media (min-width: 576px) {
+
+      font-size:  1.5rem;
+  } 
+    @media (min-width: 768px) {
+      margin-top: 20px;
+        font-size: 2.25rem;
+    } 
+    &:focus{
+      background: rgba(white, .95);
+      box-shadow: inset 2px -2px 2px rgba(black, .3);
+    }
+    
+    &::placeholder{
+      color: rgba(black, .1);
+    }
+  }
+  &__important-checkbox{
+    cursor: pointer;
+    margin-left: 20px;
+    transform: scale(1);
+    @media (min-width: 768px) {
+      font-size: 4rem;
+      transform: scale(1.5);
+    }
+  }
+  &__alert{
+    color: rgba(255, 100, 100, .7);
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    transform: scaleY(.5);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+    line-height: 2.5rem;
+  }
+  &__icons-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    max-width: 90%;
+    margin: 40px auto;
+  }
+  &__accept-icon, &__delete-icon{
+    font-size: 3rem;
+    cursor: pointer;
+    transition: transform .1s, color .1s;
+    color: rgba(white, .9);
+    @media (min-width: 768px) {
+      font-size: 6rem;
+    }
+    &:hover{
+      transform: scale(1.1);
+      color: rgba(white, 1);
+    }
+    &:active{
+      transform: scale(1);
+      color:rgba(white, .6);
+    }
+  }
+  &__delete-icon{
+    margin-left: 50px;
+  }
+}

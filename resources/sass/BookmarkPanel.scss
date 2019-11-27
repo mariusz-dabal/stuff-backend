@@ -1,0 +1,48 @@
+@import './variables.scss';
+
+.bookmark-panel{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  padding: 15px;
+  border-radius: $borderRadius;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: row;
+  background: rgba($BGColor, .75);
+  @media (min-width: 768px) {
+    padding: 20px;
+  }
+ &__category-title {
+  width: 100%;
+  height: 4rem;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  animation: bookmarkAnimTitle .5s 1 both;
+  margin-right: 35px;
+  margin-left: 35px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 10px;
+  @media (min-width: 576px) {
+    height: 6rem;
+    font-size: 1.75rem;
+  }
+  @media (min-width: 768px) {
+    height: 8rem;
+    font-size: 2.5rem;
+  }
+ }
+
+}
