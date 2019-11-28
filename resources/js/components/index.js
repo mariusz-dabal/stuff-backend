@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "normalize.css";
 import "../index.scss";
-import "../sass/variables.scss";
+import "../../sass/variables.scss";
 import App from "./App";
 
 ReactDOM.render(

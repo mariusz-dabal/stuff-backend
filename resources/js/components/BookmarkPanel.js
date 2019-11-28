@@ -14,7 +14,7 @@ function BookmarkPanel({ category_id, statusChanger, activeBookmark, name }) {
   const [groupIdActive, setGroupIdActive] = useState(0);
   const [siteIdActive, setSiteIdActive] = useState(0);
   const [popUpActiveType, setPopUpActiveType] = useState(false);
-  const serverCategoriesURL = "https://jimmyspage.pl/api/categories";
+  const serverCategoriesURL = "/api/categories";
 
   useEffect(() => {
     getGroupsData(category_id);

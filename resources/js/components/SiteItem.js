@@ -22,7 +22,7 @@ function SiteItem({
   const { url, name, updateTime, id, important } = siteData;
 
   const handleChangeImportantIcon = () => {
-    const serverCategoriesURL = "https://jimmyspage.pl/api/categories";
+    const serverCategoriesURL = "/api/categories";
     const serverSiteURL = `${serverCategoriesURL}/${category_id}/groups/${group_id}/sites/${site_id}`;
     const token = localStorage.getItem("access_token");
     const formDataSite = new FormData();

@@ -28,7 +28,7 @@ function SitePopUp({
   const [importantStatus, setImportantStatus] = useState(important);
   const [alertMessage, setAlertMessage] = useState("");
   const [deleteAlertStatus, setDeleteAlertStatus] = useState(false);
-  const serverCategoriesURL = "https://jimmyspage.pl/api/categories";
+  const serverCategoriesURL = "/api/categories";
   const newSite = formDataSite => {
     const serverSiteURL = `${serverCategoriesURL}/${category_id}/groups/${groupIdActive}/sites`;
     const token = localStorage.getItem("access_token");

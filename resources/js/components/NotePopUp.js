@@ -18,7 +18,7 @@ function NotePopUp({
   }
   const [isEditOpen, setIsEditOpen] = useState(false);
   const [textValue, setTextValue] = useState(note);
-  const serverCategoriesURL = "https://jimmyspage.pl/api/categories";
+  const serverCategoriesURL = "/api/categories";
 
   const handleShowNotes = () => {
     const formDataSite = new FormData();

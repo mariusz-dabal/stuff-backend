@@ -6,7 +6,7 @@ import axios from "axios";
 import EmptyCard from "./EmptyCard";
 
 function HomePanel(props) {
-  const serverCategoriesURL = "https://jimmyspage.pl/api/categories";
+  const serverCategoriesURL = "/api/categories";
   const [cardsData, setCardsData] = useState([]);
   const [activeStatus, setActiveStatus] = useState([]);
 

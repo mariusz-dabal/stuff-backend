@@ -20,7 +20,7 @@ function HomePanel() {
     const token = localStorage.getItem("access_token");
     axios({
       method: "post",
-      url: "https://jimmyspage.pl/api/logout",
+      url: "/api/logout",
       headers: {
         Accept: "application/json",
         Authorization: "Bearer " + token

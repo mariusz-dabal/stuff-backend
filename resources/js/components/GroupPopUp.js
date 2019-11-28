@@ -15,7 +15,7 @@ function GroupPopUp({
   const [groupName, setGroupName] = useState("");
   const [alertMessage, setAlertMessage] = useState("");
   const [deleteAlertStatus, setDeleteAlertStatus] = useState(false);
-  const serverCategoriesURL = "https://jimmyspage.pl/api/categories";
+  const serverCategoriesURL = "/api/categories";
 
   const newGroup = () => {
     const formDataGroup = new FormData();

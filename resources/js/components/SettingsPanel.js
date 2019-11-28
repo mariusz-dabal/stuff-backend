@@ -18,7 +18,7 @@ function SettingsPanel({ empty, image, category_id, getCardsData, name = "" }) {
   const [isAlertOpen, setIsAlertOpen] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
   const [alertConfirm, setAlertConfirm] = useState(false);
-  const serverCategoriesURL = "https://jimmyspage.pl/api/categories";
+  const serverCategoriesURL = "/api/categories";
   const [requestFlag, setRequestFlag] = useState(false);
 
   const handleAcceptSettings = () => {

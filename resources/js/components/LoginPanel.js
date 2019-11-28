@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "../../sass/LoginPanel.scss";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
-const serverLoginURL = "https://jimmyspage.pl/api/login";
-const serverRegisterURL = "https://jimmyspage.pl/api/register";
+const serverLoginURL = "/api/login";
+const serverRegisterURL = "/api/register";
 
 function LoginPanel() {
   const [emailValue, setEmailValue] = useState("");
