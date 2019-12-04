@@ -16025,7 +16025,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.empty-group {\n  box-shadow: none;\n  background: rgba(97, 136, 156, 0.2);\n  border-radius: 10px;\n  border-left: 2px solid rgba(255, 255, 255, 0.75);\n  border-right: 2px solid rgba(255, 255, 255, 0.75);\n  color: rgba(255, 255, 255, 0.75);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 50px;\n  transition: background 0.2s;\n  margin: 10px;\n}\n.empty-group:hover {\n  background: rgba(255, 255, 255, 0.1);\n  box-shadow: none;\n}\n.empty-group::after {\n  display: none;\n}\n.empty-group__plus-icon {\n  transform: scale(1.15);\n}\n@media (min-width: 768px) {\n  .empty-group__plus-icon {\n    transform: scale(1.35);\n  }\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.empty-group {\n  box-shadow: none;\n  background: rgba(97, 136, 156, 0.2);\n  border-radius: 10px;\n  border-left: 2px solid rgba(255, 255, 255, 0.75);\n  border-right: 2px solid rgba(255, 255, 255, 0.75);\n  color: rgba(255, 255, 255, 0.75);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 45px;\n  transition: background 0.2s;\n  margin: 10px;\n}\n.empty-group:hover {\n  background: rgba(255, 255, 255, 0.1);\n  box-shadow: none;\n}\n.empty-group::after {\n  display: none;\n}\n.empty-group__plus-icon {\n  transform: scale(1.15);\n}\n@media (min-width: 768px) {\n  .empty-group__plus-icon {\n    transform: scale(1.35);\n  }\n}", ""]);
 
 // exports
 
@@ -16044,7 +16044,26 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.empty-site {\n  position: relative;\n  width: 100%;\n  box-shadow: none;\n  background: rgba(97, 136, 156, 0.2);\n  border-radius: 10px;\n  border-left: 2px solid rgba(255, 255, 255, 0.75);\n  border-right: 2px solid rgba(255, 255, 255, 0.75);\n  color: rgba(255, 255, 255, 0.75);\n  transition: background 0.2s;\n}\n.empty-site.site {\n  height: 50px;\n}\n@media (min-width: 576px) {\n  .empty-site.site {\n    width: 35%;\n  }\n}\n.empty-site__plus-icon {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  font-size: 2rem;\n}\n.empty-site:hover {\n  background: rgba(255, 255, 255, 0.1);\n  box-shadow: none;\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.empty-site {\n  position: relative;\n  max-width: 100%;\n  box-shadow: none;\n  margin: 10px 10px 0 10px;\n  background: rgba(97, 136, 156, 0.2);\n  border-radius: 10px;\n  border-left: 2px solid rgba(255, 255, 255, 0.75);\n  border-right: 2px solid rgba(255, 255, 255, 0.75);\n  color: rgba(255, 255, 255, 0.75);\n  transition: background 0.2s;\n  height: 40px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-weight: 700;\n  font-size: 2rem;\n  cursor: pointer;\n}\n@media (min-width: 576px) {\n  .empty-site {\n    width: 35%;\n    height: 45px;\n  }\n}\n.empty-site:hover {\n  background: rgba(255, 255, 255, 0.1);\n  box-shadow: none;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/GetStarted.scss":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./resources/sass/GetStarted.scss ***!
+  \*****************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.get-started {\n  padding: 30px 15px 15px;\n  width: 100%;\n  min-height: 100vh;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  border-radius: 0 10px 10px 0;\n  color: #61889c;\n}\n@media (min-width: 768px) {\n  .get-started {\n    overflow-Y: scroll;\n  }\n}\n@media (min-width: 1200px) {\n  .get-started {\n    flex-direction: row;\n    flex-wrap: wrap;\n    justify-content: center;\n  }\n}\n.get-started__about {\n  color: white;\n  text-align: center;\n  width: 100%;\n  text-transform: uppercase;\n  font-weight: 300;\n  font-size: 2.25rem;\n  background: rgba(97, 136, 156, 0.9);\n  border-radius: 10px;\n  padding: 15px;\n}\n@media (min-width: 1200px) {\n  .get-started__about {\n    width: 100%;\n  }\n}\n.get-started img {\n  width: 100%;\n  display: block;\n}\n.get-started__step {\n  margin-top: 15px;\n  text-align: center;\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  flex-direction: column;\n}\n@media (min-width: 1200px) {\n  .get-started__step {\n    width: 50%;\n    height: 450px;\n    margin-bottom: 35%;\n    margin-top: 0;\n  }\n}\n.get-started__title {\n  width: 100%;\n  font-size: 1.85rem;\n  font-weight: 500;\n  text-shadow: 1px 1px 1.5px rgba(255, 255, 255, 0.8);\n  margin: 20px;\n}\n@media (min-width: 768px) {\n  .get-started__title {\n    font-size: 2.25rem;\n  }\n}\n.get-started__gif {\n  border-radius: 13px;\n  overflow: hidden;\n  margin: 20px;\n  width: 80%;\n  max-width: 450px;\n}", ""]);
 
 // exports
 
@@ -16063,7 +16082,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.group-item {\n  white-space: nowrap;\n  color: grey;\n  margin: 8px 10px;\n  font-weight: 500;\n  text-transform: uppercase;\n  -webkit-animation: bookmarkAnimTitle 0.5s 1 both;\n          animation: bookmarkAnimTitle 0.5s 1 both;\n  list-style-type: none;\n  border-radius: 12.5px;\n  display: block;\n  padding: 5px 10px 5px 15px;\n  cursor: pointer;\n  transition: box-shadow 0.1s, background 0.1s;\n  font-size: 1.5rem;\n  background: rgba(255, 255, 255, 0.7);\n  overflow: hidden;\n  box-shadow: inset 2px -2px 2px rgba(255, 255, 255, 0.9);\n  position: relative;\n}\n.group-item__title {\n  transition: transform 0.15s;\n}\n.group-item.all-groups .group-item__edit-icon {\n  display: none;\n}\n.group-item__edit-icon {\n  position: absolute;\n  content: \"\";\n  top: 0;\n  right: 0;\n  width: 35px;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: lightgray;\n  font-size: 14px;\n  transition: width 0.1s, box-shadow 0.1s, background 0.1s, color 0.1s;\n  background: rgba(97, 136, 156, 0.9);\n  box-shadow: inset 0 -7px 2px -5px rgba(255, 255, 255, 0.4);\n  transform-origin: 100% 50%;\n}\n.group-item__edit-icon:hover {\n  width: 45px;\n  background: #61889c;\n  box-shadow: inset 0 -7px 2px -5px rgba(255, 255, 255, 0.6);\n}\n@media (min-width: 768px) {\n  .group-item {\n    line-height: 3.5rem;\n  }\n}\n.group-item:hover {\n  box-shadow: inset 2px -2px 2px rgba(255, 255, 255, 0.3);\n  background: rgba(255, 255, 255, 0.75);\n}\n.group-item:hover .group-item__edit-icon {\n  color: white;\n}\n.group-item:hover .group-item__title {\n  transform: translateX(5px);\n}\n.group-item:active {\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.25);\n}\n.group-item.active-select {\n  background: light;\n  transition: box-shadow 0.05s;\n  font-weight: 600;\n  letter-spacing: 0.75px;\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.35);\n  background: rgba(211, 211, 211, 0.5);\n  color: white;\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.group-item {\n  white-space: nowrap;\n  color: grey;\n  margin: 8px 10px;\n  font-weight: 500;\n  text-transform: uppercase;\n  -webkit-animation: bookmarkAnimTitle 0.5s 1 both;\n          animation: bookmarkAnimTitle 0.5s 1 both;\n  list-style-type: none;\n  border-radius: 12.5px;\n  display: block;\n  padding: 8px 10px 8px 15px;\n  cursor: pointer;\n  transition: box-shadow 0.1s, background 0.1s;\n  font-size: 1.5rem;\n  background: rgba(255, 255, 255, 0.7);\n  overflow: hidden;\n  box-shadow: inset 2px -2px 2px rgba(255, 255, 255, 0.9);\n  position: relative;\n}\n.group-item__title {\n  transition: transform 0.15s;\n}\n.group-item.all-groups .group-item__edit-icon {\n  display: none;\n}\n.group-item__edit-icon {\n  position: absolute;\n  content: \"\";\n  top: 0;\n  right: 0;\n  width: 35px;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  color: lightgray;\n  font-size: 14px;\n  transition: width 0.1s, box-shadow 0.1s, background 0.1s, color 0.1s;\n  background: rgba(97, 136, 156, 0.9);\n  box-shadow: inset 0 -7px 2px -5px rgba(255, 255, 255, 0.4);\n  transform-origin: 100% 50%;\n}\n.group-item__edit-icon:hover {\n  width: 45px;\n  background: #61889c;\n  box-shadow: inset 0 -7px 2px -5px rgba(255, 255, 255, 0.6);\n}\n@media (min-width: 768px) {\n  .group-item {\n    line-height: 3.5rem;\n  }\n}\n.group-item:hover {\n  box-shadow: inset 2px -2px 2px rgba(255, 255, 255, 0.3);\n  background: rgba(255, 255, 255, 0.75);\n}\n.group-item:hover .group-item__edit-icon {\n  color: white;\n}\n.group-item:hover .group-item__title {\n  transform: translateX(5px);\n}\n.group-item:active {\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.25);\n}\n.group-item.active-select {\n  background: light;\n  transition: box-shadow 0.05s;\n  font-weight: 600;\n  letter-spacing: 0.75px;\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.35);\n  background: rgba(211, 211, 211, 0.5);\n  color: white;\n}", ""]);
 
 // exports
 
@@ -16139,7 +16158,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@-webkit-keyframes buttonFlash {\n  0% {\n    left: -125%;\n  }\n  10% {\n    left: -125%;\n  }\n  100% {\n    left: 125%;\n  }\n}\n@keyframes buttonFlash {\n  0% {\n    left: -125%;\n  }\n  10% {\n    left: -125%;\n  }\n  100% {\n    left: 125%;\n  }\n}\n.login-panel {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  height: 100%;\n  color: white;\n}\n@media (min-width: 768px) {\n  .login-panel {\n    margin: 0 auto;\n    max-width: 1200px;\n    justify-content: flex-end;\n  }\n}\n.login-panel__container {\n  background: rgba(97, 136, 156, 0.8);\n  transition: background 0.2s;\n  height: 100%;\n  width: 100%;\n  display: flex;\n  align-items: center;\n}\n@media (min-width: 768px) {\n  .login-panel__container {\n    border-radius: 10px 0 0 10px;\n    max-width: 350px;\n  }\n}\n.login-panel__container:hover {\n  background: rgba(97, 136, 156, 0.9);\n}\n.login-panel__form {\n  height: 100%;\n  width: 100%;\n  max-height: 750px;\n  text-align: center;\n  display: flex;\n  flex-wrap: wrap;\n  flex-direction: column;\n  justify-content: space-evenly;\n  align-items: center;\n}\n.login-panel__title {\n  width: 100%;\n  margin: 0;\n  font-weight: 900;\n  text-align: center;\n  font-size: 3.5rem;\n  position: relative;\n}\n@media (min-width: 768px) {\n  .login-panel__title {\n    font-size: 4.5rem;\n  }\n}\n.login-panel__title:after {\n  content: \"\";\n  position: absolute;\n  top: calc(100% + 20px);\n  left: 50%;\n  height: 1px;\n  width: 80%;\n  background: rgba(255, 255, 255, 0.2);\n  transform: translate(-50%, -50%);\n}\n.login-panel__email-title, .login-panel__name-title, .login-panel__password-title {\n  display: block;\n  font-size: 1.5rem;\n}\n.login-panel__email-input, .login-panel__name-input, .login-panel__password-input {\n  color: darkgrey;\n  width: 100%;\n  padding: 7.5px;\n  display: block;\n  margin: 10px 0;\n  max-width: 300px;\n  font-size: 1.5rem;\n  border: 1px solid white;\n  border-radius: 5px;\n  background: lightgrey;\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.25);\n  transition: box-shadow 0.2s;\n}\n.login-panel__email-input:focus, .login-panel__name-input:focus, .login-panel__password-input:focus {\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.35);\n}\n.login-panel__email-input::-webkit-input-placeholder, .login-panel__name-input::-webkit-input-placeholder, .login-panel__password-input::-webkit-input-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input::-moz-placeholder, .login-panel__name-input::-moz-placeholder, .login-panel__password-input::-moz-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input:-ms-input-placeholder, .login-panel__name-input:-ms-input-placeholder, .login-panel__password-input:-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input::-ms-input-placeholder, .login-panel__name-input::-ms-input-placeholder, .login-panel__password-input::-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input::placeholder, .login-panel__name-input::placeholder, .login-panel__password-input::placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__login-button {\n  background: none;\n  max-width: 500px;\n  font-size: 2rem;\n  padding: 10px 35px;\n  border-radius: 10px;\n  border: 3px solid white;\n  cursor: pointer;\n  transition: background 0.2s, color 0.2s, box-shadow 0.1s;\n  color: white;\n  position: relative;\n  overflow: hidden;\n  mix-blend-mode: lighten;\n}\n.login-panel__login-button::before {\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.3), transparent);\n  position: absolute;\n  top: 0;\n  left: -100%;\n  transform-origin: 0 0;\n  -webkit-animation: buttonFlash 5s infinite;\n          animation: buttonFlash 5s infinite;\n  mix-blend-mode: exclusion;\n}\n.login-panel__login-button:hover {\n  background: rgba(97, 136, 156, 0.9);\n}\n.login-panel__login-button:active {\n  background: rgba(97, 136, 156, 0.9);\n  box-shadow: inset 2px -2px 2px rgba(0, 0, 0, 0.3);\n}\n.login-panel__sign-title {\n  font-size: 1.5rem;\n  padding: 0 20px;\n  color: rgba(255, 255, 255, 0.85);\n  position: relative;\n}\n.login-panel__sign-title:after {\n  content: \"\";\n  position: absolute;\n  bottom: calc(100% + 25px);\n  left: 50%;\n  height: 1px;\n  width: 80%;\n  background: rgba(255, 255, 255, 0.15);\n  transform: translate(-50%, -50%);\n}\n.login-panel__sign-link {\n  text-decoration: none;\n  font-weight: 700;\n  cursor: pointer;\n}\n.login-panel__sign-link:hover {\n  text-decoration: underline;\n}\n.login-panel__alert {\n  font-size: 1.5rem;\n  font-weight: 700;\n  color: rgba(255, 100, 100, 0.7);\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@-webkit-keyframes buttonFlash {\n  0% {\n    left: -125%;\n  }\n  10% {\n    left: -125%;\n  }\n  100% {\n    left: 125%;\n  }\n}\n@keyframes buttonFlash {\n  0% {\n    left: -125%;\n  }\n  10% {\n    left: -125%;\n  }\n  100% {\n    left: 125%;\n  }\n}\n.login-panel {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  min-height: 100vh;\n  color: white;\n  flex-direction: column;\n}\n@media (min-width: 768px) {\n  .login-panel {\n    margin: 0 auto;\n    max-width: 1200px;\n    height: 100vh;\n    flex-direction: row;\n    justify-content: flex-start;\n    overflow: hidden;\n  }\n}\n.login-panel__container {\n  background: rgba(97, 136, 156, 0.9);\n  transition: background 0.2s;\n  height: 100vh;\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  text-align: center;\n  align-items: center;\n}\n@media (min-width: 768px) {\n  .login-panel__container {\n    border-radius: 10px 0 0 10px;\n    max-width: 350px;\n  }\n}\n.login-panel__form {\n  height: 95%;\n  width: 100%;\n  margin-top: 30px;\n  margin-bottom: 20vh;\n  display: flex;\n  flex-wrap: wrap;\n  flex-direction: column;\n  justify-content: space-evenly;\n  align-items: center;\n}\n.login-panel__title {\n  width: 100%;\n  margin: 0;\n  font-weight: 900;\n  text-align: center;\n  font-size: 5rem;\n  position: relative;\n}\n@media (min-width: 768px) {\n  .login-panel__title {\n    font-size: 4rem;\n  }\n}\n.login-panel__title:after {\n  content: \"\";\n  position: absolute;\n  top: calc(100% + 20px);\n  left: 50%;\n  height: 1px;\n  width: 80%;\n  background: rgba(255, 255, 255, 0.2);\n  transform: translate(-50%, -50%);\n}\n.login-panel__email-title, .login-panel__name-title, .login-panel__password-title {\n  display: block;\n  font-size: 1.5rem;\n}\n.login-panel__email-input, .login-panel__name-input, .login-panel__password-input {\n  color: darkgrey;\n  width: 100%;\n  padding: 7.5px;\n  display: block;\n  margin: 10px 0;\n  max-width: 300px;\n  font-size: 1.5rem;\n  border: 1px solid white;\n  border-radius: 5px;\n  background: lightgrey;\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.25);\n  transition: box-shadow 0.2s;\n}\n.login-panel__email-input:focus, .login-panel__name-input:focus, .login-panel__password-input:focus {\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.35);\n}\n.login-panel__email-input::-webkit-input-placeholder, .login-panel__name-input::-webkit-input-placeholder, .login-panel__password-input::-webkit-input-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input::-moz-placeholder, .login-panel__name-input::-moz-placeholder, .login-panel__password-input::-moz-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input:-ms-input-placeholder, .login-panel__name-input:-ms-input-placeholder, .login-panel__password-input:-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input::-ms-input-placeholder, .login-panel__name-input::-ms-input-placeholder, .login-panel__password-input::-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input::placeholder, .login-panel__name-input::placeholder, .login-panel__password-input::placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__login-button {\n  background: none;\n  max-width: 500px;\n  font-size: 2rem;\n  padding: 10px 35px;\n  border-radius: 10px;\n  border: 3px solid white;\n  cursor: pointer;\n  transition: background 0.2s, color 0.2s, box-shadow 0.1s;\n  color: white;\n  position: relative;\n  overflow: hidden;\n  mix-blend-mode: lighten;\n}\n.login-panel__login-button::before {\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.3), transparent);\n  position: absolute;\n  top: 0;\n  left: -100%;\n  transform-origin: 0 0;\n  -webkit-animation: buttonFlash 5s infinite;\n          animation: buttonFlash 5s infinite;\n  mix-blend-mode: exclusion;\n}\n.login-panel__login-button:hover {\n  background: rgba(97, 136, 156, 0.9);\n}\n.login-panel__login-button:active {\n  background: rgba(97, 136, 156, 0.9);\n  box-shadow: inset 2px -2px 2px rgba(0, 0, 0, 0.3);\n}\n.login-panel__sign-title {\n  font-size: 1.5rem;\n  padding: 0 20px;\n  color: rgba(255, 255, 255, 0.85);\n  position: relative;\n}\n.login-panel__sign-title:after {\n  content: \"\";\n  position: absolute;\n  bottom: calc(100% + 25px);\n  left: 50%;\n  height: 1px;\n  width: 80%;\n  background: rgba(255, 255, 255, 0.15);\n  transform: translate(-50%, -50%);\n}\n.login-panel__sign-link {\n  text-decoration: none;\n  font-weight: 700;\n  cursor: pointer;\n}\n.login-panel__sign-link:hover {\n  text-decoration: underline;\n}\n.login-panel__alert {\n  font-size: 1.5rem;\n  font-weight: 700;\n  color: rgba(255, 100, 100, 0.7);\n}\n.login-panel__credits {\n  width: 100%;\n  opacity: 0.75;\n  font-size: 1.2rem;\n  margin-bottom: 25px;\n}", ""]);
 
 // exports
 
@@ -16177,7 +16196,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.note-pop-up {\n  padding: 25px;\n  font-size: 2rem;\n  line-height: 2.25rem;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  border-radius: 10px;\n  overflow-y: scroll;\n  padding-right: 50px;\n}\n.note-pop-up__edit-switch, .note-pop-up__accept-edit-switch {\n  position: absolute;\n  color: rgba(255, 255, 255, 0.6);\n  transition: color 0.1s;\n  cursor: pointer;\n}\n.note-pop-up__edit-switch:hover, .note-pop-up__accept-edit-switch:hover {\n  color: rgba(255, 255, 255, 0.8);\n}\n.note-pop-up__edit-switch {\n  top: 60px;\n  right: 9px;\n  font-size: 23px;\n}\n.note-pop-up__accept-edit-switch {\n  top: 110px;\n  right: 10px;\n  font-size: 25px;\n}\n.note-pop-up__text-area {\n  width: 100%;\n  height: 100%;\n  resize: none;\n  padding: 25px;\n  border-radius: 10px;\n  background: rgba(255, 255, 255, 0.3);\n  color: white;\n  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.35);\n  letter-spacing: 1.25px;\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.note-pop-up {\n  padding: 40px;\n  font-size: 2rem;\n  line-height: 2.25rem;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  border-radius: 10px;\n  overflow-y: scroll;\n  padding-right: 50px;\n}\n.note-pop-up__edit-switch, .note-pop-up__accept-edit-switch {\n  position: absolute;\n  color: rgba(255, 255, 255, 0.6);\n  transition: color 0.1s;\n  cursor: pointer;\n}\n.note-pop-up__edit-switch:hover, .note-pop-up__accept-edit-switch:hover {\n  color: rgba(255, 255, 255, 0.8);\n}\n.note-pop-up__edit-switch {\n  top: 60px;\n  right: 9px;\n  font-size: 23px;\n}\n.note-pop-up__accept-edit-switch {\n  top: 110px;\n  right: 10px;\n  font-size: 25px;\n}\n.note-pop-up__text-area {\n  width: 100%;\n  height: 100%;\n  resize: none;\n  padding: 25px;\n  border-radius: 10px;\n  background: rgba(255, 255, 255, 0.3);\n  color: white;\n  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.35);\n  letter-spacing: 1.25px;\n}\n.note-pop-up__text-result {\n  white-space: pre-line;\n  overflow-y: scroll;\n  height: 100%;\n}", ""]);
 
 // exports
 
@@ -16234,7 +16253,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.site {\n  position: relative;\n  border-radius: 10px;\n  margin: 10px;\n  padding: 20px;\n  height: 150px;\n  cursor: pointer;\n  text-align: center;\n  transition: box-shadow 0.1s, background 0.1s;\n  color: grey;\n  display: flex;\n  flex-wrap: wrap;\n  -webkit-animation: bookmarkAnimTitle 0.5s 1 both;\n          animation: bookmarkAnimTitle 0.5s 1 both;\n  box-shadow: inset 2px -2px 2px white;\n  background: rgba(255, 255, 255, 0.7);\n  overflow: hidden;\n}\n.site__important-alert {\n  top: 5px;\n  padding: 0;\n  left: 10px;\n  position: absolute;\n  font-weight: 700;\n  font-size: 5rem;\n  color: #61889c;\n  cursor: pointer;\n  z-index: 1;\n  transition: opacity 0.2s;\n  opacity: 0.1;\n}\n.site__important-alert:hover {\n  opacity: 0.5;\n}\n.site__important-alert::after {\n  font-size: 1.5rem;\n  position: absolute;\n  left: 100%;\n  top: 50%;\n  content: \"Pilne!\";\n  opacity: 0;\n  transition: transform 0.2s, opacity 0.2s;\n  transform: translate(-35px, -75%);\n}\n.site__important-alert:hover::after {\n  transform: translate(10px, -75%);\n  opacity: 0.75;\n}\n.site:hover {\n  box-shadow: inset 2px -2px 2px rgba(255, 255, 255, 0.3);\n  background: rgba(255, 255, 255, 0.75);\n}\n.site:active {\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.25);\n}\n.site__favicon {\n  width: 18px;\n  height: 18px;\n}\n.site__favicon img {\n  width: 100%;\n  position: relative;\n  z-index: 5;\n}\n.site__favicon img:hover + span::after {\n  opacity: 0.75;\n  transform: translate(10px, -75%);\n  content: \"Pilne!\";\n}\n.site__favicon img:hover + span {\n  opacity: 0.5;\n}\n.site__name {\n  font-size: 1.5rem;\n  flex: 1;\n  text-align: center;\n}\n.site__update-time {\n  width: 100%;\n}\n.site__link, .site__edit {\n  right: 0;\n  position: absolute;\n  width: 50px;\n  font-weight: 700;\n  font-size: 1.5rem;\n  padding: 1rem 20px 0 20px;\n  text-transform: uppercase;\n  text-decoration: none;\n  transition: box-shadow 0.1s, color 0.1s;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: #61889c;\n  color: lightgrey;\n  border: 0;\n  cursor: pointer;\n}\n.site__link > svg, .site__edit > svg {\n  transform: translateY(-50%);\n}\n.site__link:hover, .site__edit:hover {\n  box-shadow: inset 2px -2px 2px rgba(255, 255, 255, 0.3);\n  color: white;\n}\n.site__link:active, .site__edit:active {\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.25);\n}\n.site__edit {\n  top: 0;\n  bottom: 50%;\n  margin-bottom: 1px;\n}\n.site__link {\n  top: 50%;\n  bottom: 0;\n  margin-top: 1px;\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.site {\n  position: relative;\n  border-radius: 10px;\n  margin: 10px;\n  padding: 20px;\n  height: 150px;\n  cursor: pointer;\n  text-align: center;\n  transition: box-shadow 0.1s, background 0.1s;\n  color: grey;\n  -webkit-animation: bookmarkAnimTitle 0.5s 1 both;\n          animation: bookmarkAnimTitle 0.5s 1 both;\n  box-shadow: inset 2px -2px 2px white;\n  background: rgba(255, 255, 255, 0.7);\n  overflow: hidden;\n}\n.site__updated-time {\n  position: absolute;\n  bottom: 10px;\n  left: 15px;\n  transform: translateY(-50%);\n  opacity: 0.6;\n  font-size: 1rem;\n}\n.site__notes {\n  position: absolute;\n  text-align: left;\n  top: 45px;\n  bottom: 45px;\n  left: 80px;\n  right: 60px;\n  white-space: pre-wrap;\n  overflow: hidden;\n  font-size: 1.1rem;\n}\n.site__important-alert {\n  top: 5px;\n  padding: 0;\n  left: 10px;\n  position: absolute;\n  font-weight: 700;\n  font-size: 5rem;\n  color: #61889c;\n  cursor: pointer;\n  z-index: 1;\n  transition: opacity 0.2s;\n  opacity: 0.1;\n}\n.site__important-alert:hover {\n  opacity: 0.5;\n}\n.site__important-alert::after {\n  font-size: 1.5rem;\n  position: absolute;\n  left: 100%;\n  top: 50%;\n  content: \"Wa\\17Cne!\";\n  opacity: 0;\n  transition: transform 0.2s, opacity 0.2s;\n  transform: translate(-35px, -75%);\n}\n.site__important-alert:hover::after {\n  transform: translate(10px, -75%);\n  opacity: 0.75;\n}\n.site:hover {\n  box-shadow: inset 2px -2px 2px rgba(255, 255, 255, 0.3);\n  background: rgba(255, 255, 255, 0.75);\n}\n.site:active {\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.25);\n}\n.site__favicon {\n  width: 18px;\n  height: 18px;\n}\n.site__favicon img {\n  width: 100%;\n  position: relative;\n  z-index: 5;\n}\n.site__favicon img:hover + span::after {\n  opacity: 0.75;\n  transform: translate(10px, -75%);\n  content: \"Wa\\17Cne!\";\n}\n.site__favicon img:hover + span {\n  opacity: 0.5;\n}\n.site__name {\n  font-size: 1.5rem;\n  position: absolute;\n  top: 20px;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  text-align: center;\n}\n.site__link, .site__edit {\n  right: 0;\n  position: absolute;\n  width: 50px;\n  font-weight: 700;\n  font-size: 1.5rem;\n  padding: 1rem 20px 0 20px;\n  text-transform: uppercase;\n  text-decoration: none;\n  transition: box-shadow 0.1s, color 0.1s;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: #61889c;\n  color: lightgrey;\n  border: 0;\n  cursor: pointer;\n}\n.site__link > svg, .site__edit > svg {\n  transform: translateY(-50%);\n}\n.site__link:hover, .site__edit:hover {\n  box-shadow: inset 2px -2px 2px rgba(255, 255, 255, 0.3);\n  color: white;\n}\n.site__link:active, .site__edit:active {\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.25);\n}\n.site__edit {\n  top: 0;\n  bottom: 50%;\n  margin-bottom: 1px;\n}\n.site__link {\n  top: 50%;\n  bottom: 0;\n  margin-top: 1px;\n}", ""]);
 
 // exports
 
@@ -16272,7 +16291,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.sites-panel {\n  width: 100%;\n  border-radius: 10px;\n  box-shadow: inset -2px 2px 2px rgba(0, 0, 0, 0.25), -2px 2px 2px rgba(255, 255, 255, 0.35);\n  height: calc(75% - 2rem);\n  overflow-x: hidden;\n  overflow-y: scroll;\n  background: rgba(0, 0, 0, 0.3);\n  -webkit-backdrop-filter: blur(5px);\n          backdrop-filter: blur(5px);\n}\n@media (min-width: 576px) {\n  .sites-panel {\n    margin-left: 10px;\n    height: calc(100% - 6rem);\n    flex: 1;\n  }\n}\n@media (min-width: 768px) {\n  .sites-panel {\n    height: calc(100% - 8rem);\n    margin-left: 20px;\n  }\n}\n.sites-panel__list {\n  height: 100%;\n  width: 100%;\n  overflow-x: hidden;\n  overflow-y: scroll;\n  border-radius: 10px;\n}\n.sites-panel__header-wrapper {\n  display: flex;\n  flex-direction: column;\n}\n@media (min-width: 576px) {\n  .sites-panel__header-wrapper {\n    flex-direction: row;\n  }\n}\n.sites-panel__group-name {\n  height: 50px;\n  margin-bottom: 0;\n  flex: 1;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-weight: 700;\n  font-size: 1.25rem;\n  letter-spacing: 0.75px;\n  border-radius: 10px;\n  border-left: 2px solid rgba(255, 255, 255, 0.75);\n  border-right: 2px solid rgba(255, 255, 255, 0.75);\n  color: #e6e6e6;\n  cursor: default;\n  box-shadow: none;\n  background: rgba(97, 136, 156, 0.2);\n}\n@media (min-width: 576px) {\n  .sites-panel__group-name {\n    height: 50px;\n  }\n}\n.sites-panel__group-name:hover {\n  background: transparent;\n  box-shadow: none;\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.sites-panel {\n  width: 100%;\n  border-radius: 10px;\n  box-shadow: inset -2px 2px 2px rgba(0, 0, 0, 0.25), -2px 2px 2px rgba(255, 255, 255, 0.35);\n  height: calc(75% - 2rem);\n  overflow-x: hidden;\n  overflow-y: scroll;\n  background: rgba(0, 0, 0, 0.3);\n  -webkit-backdrop-filter: blur(5px);\n          backdrop-filter: blur(5px);\n}\n@media (min-width: 576px) {\n  .sites-panel {\n    margin-left: 10px;\n    height: calc(100% - 6rem);\n    flex: 1;\n  }\n}\n@media (min-width: 768px) {\n  .sites-panel {\n    height: calc(100% - 8rem);\n    margin-left: 20px;\n  }\n}\n.sites-panel__list {\n  height: 100%;\n  width: 100%;\n  overflow-x: hidden;\n  overflow-y: scroll;\n  border-radius: 10px;\n}\n.sites-panel__header-wrapper {\n  display: flex;\n  flex-direction: column;\n}\n@media (min-width: 576px) {\n  .sites-panel__header-wrapper {\n    flex-direction: row;\n  }\n}\n.sites-panel__group-name {\n  height: 40px;\n  padding: 10px;\n  display: flex;\n  flex: 1;\n  justify-content: center;\n  align-items: center;\n  font-weight: 700;\n  font-size: 1.25rem;\n  letter-spacing: 0.75px;\n  border-radius: 10px;\n  border-left: 2px solid rgba(255, 255, 255, 0.75);\n  border-right: 2px solid rgba(255, 255, 255, 0.75);\n  margin-bottom: 0;\n  color: #e6e6e6;\n  cursor: default;\n  box-shadow: none;\n  background: rgba(97, 136, 156, 0.2);\n}\n@media (min-width: 576px) {\n  .sites-panel__group-name {\n    height: 45px;\n  }\n}\n.sites-panel__group-name:hover {\n  background: transparent;\n  box-shadow: none;\n}", ""]);
 
 // exports
 
@@ -76890,8 +76909,7 @@ function Card(_ref) {
     activeSettings = activeStatus.activeSettings;
   }
 
-  var serverURL = "http://stuff.test/"; //jimmyspage.pl
-
+  var serverURL = "https://jimmyspage.pl";
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "card ".concat(activeSettings && "active-settings", " ").concat(activeBookmark && "active-bookmark"),
     style: {
@@ -76987,7 +77005,7 @@ function EmptyCard(_ref) {
     className: "card card__empty ".concat(activeSettings && "active-settings")
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card__card-container"
-  }, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: activeSettings ? {
       display: "none"
     } : {
@@ -77080,7 +77098,7 @@ __webpack_require__.r(__webpack_exports__);
 function EmptySiteItem(_ref) {
   var setPopUpActiveType = _ref.setPopUpActiveType;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "site empty-site",
+    className: "empty-site",
     onClick: function onClick() {
       setPopUpActiveType("empty-site");
     }
@@ -77091,6 +77109,56 @@ function EmptySiteItem(_ref) {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (EmptySiteItem);
+
+/***/ }),
+
+/***/ "./resources/js/components/GetStarted.js":
+/*!***********************************************!*\
+  !*** ./resources/js/components/GetStarted.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sass_GetStarted_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../sass/GetStarted.scss */ "./resources/sass/GetStarted.scss");
+/* harmony import */ var _sass_GetStarted_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_GetStarted_scss__WEBPACK_IMPORTED_MODULE_1__);
+
+ // import gif1 from "../img/Gif-1.gif";
+// import gif2 from "../img/Gif-2.gif";
+
+var gif1 = "http://jimmyspage.pl/storage/images/Gif-1.gif";
+var gif2 = "http://jimmyspage.pl/storage/images/Gif-2.gif";
+
+function GetStarted() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "get-started"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "get-started__about"
+  }, "Organizer ulubionych stron internetowych"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "get-started__step"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "get-started__title get-started__title--first"
+  }, "1. Zak\u0142adaj karty z kategoriami"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "get-started__gif get-started__gif--first"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: gif1,
+    alt: "Step 1"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "get-started__step"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "get-started__title get-started__title--second"
+  }, "2. Personalizuj grupy, strony i notatki"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "get-started__gif get-started__gif--second"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: gif2,
+    alt: "Step 2"
+  }))));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (GetStarted);
 
 /***/ }),
 
@@ -77180,7 +77248,8 @@ function GroupPopUp(_ref) {
       getGroupsData = _ref.getGroupsData,
       getSitesData = _ref.getSitesData,
       popUpActiveType = _ref.popUpActiveType,
-      groupIdActive = _ref.groupIdActive;
+      groupIdActive = _ref.groupIdActive,
+      empty = _ref.empty;
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
       _useState2 = _slicedToArray(_useState, 2),
@@ -77266,7 +77335,7 @@ function GroupPopUp(_ref) {
       return setAlertMessage("Podaj nazwę grupy");
     } else if (groupName.length < 3) {
       return setAlertMessage("Za krótka nazwa");
-    } else if (groupName.length > 20) {
+    } else if (groupName.length > 25) {
       return setAlertMessage("Za długa nazwa");
     }
 
@@ -77285,7 +77354,7 @@ function GroupPopUp(_ref) {
       e.preventDefault();
       editTypeChanger();
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+  }, !deleteAlertStatus && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     htmlFor: "group-name",
     className: "group-pop-up__name",
     style: {
@@ -77314,19 +77383,21 @@ function GroupPopUp(_ref) {
     onClick: editTypeChanger
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faCheck"]
-  })), groupIdActive !== -1 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    style: {
-      color: deleteAlertStatus && "rgba(255, 0, 0, .5)"
-    },
+  })), !empty && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "group-pop-up__delete-icon",
     onClick: function onClick() {
       setDeleteAlertStatus(function (state) {
         return !state;
       });
-      setAlertMessage("Na pewno chcesz usunąć grupę?");
+
+      if (deleteAlertStatus) {
+        setAlertMessage("");
+      } else if (!deleteAlertStatus) {
+        setAlertMessage("Na pewno chcesz usunąć grupę?");
+      }
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
-    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faTrashAlt"]
+    icon: deleteAlertStatus ? _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faShare"] : _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faTrashAlt"]
   })))));
 }
 
@@ -77406,7 +77477,7 @@ function GroupsPanel(_ref) {
     onMouseEnter: handleGroupListEnter,
     onMouseLeave: handleGroupListLeave,
     style: {
-      width: isHoverOnGroupItem && "50%"
+      width: isHoverOnGroupItem && "40%"
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "groups-panel__list"
@@ -77587,11 +77658,12 @@ function HomePanel(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _sass_LoginPanel_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../sass/LoginPanel.scss */ "./resources/sass/LoginPanel.scss");
-/* harmony import */ var _sass_LoginPanel_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_LoginPanel_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _GetStarted__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GetStarted */ "./resources/js/components/GetStarted.js");
+/* harmony import */ var _sass_LoginPanel_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../sass/LoginPanel.scss */ "./resources/sass/LoginPanel.scss");
+/* harmony import */ var _sass_LoginPanel_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sass_LoginPanel_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
@@ -77599,6 +77671,7 @@ function _nonIterableRest() { throw new TypeError("Invalid attempt to destructur
 function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -77633,14 +77706,14 @@ function LoginPanel() {
       alertMessage = _useState10[0],
       setAlertMessage = _useState10[1];
 
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useHistory"])();
+  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["useHistory"])();
 
   var handleRegisterRequest = function handleRegisterRequest() {
     var loginForm = new FormData();
     loginForm.set("name", nameValue);
     loginForm.set("email", emailValue);
     loginForm.set("password", passwordValue);
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(serverRegisterURL, loginForm, {
+    axios__WEBPACK_IMPORTED_MODULE_3___default.a.post(serverRegisterURL, loginForm, {
       headers: {
         "Content-Type": "multipart/form-data"
       }
@@ -77652,7 +77725,7 @@ function LoginPanel() {
   };
 
   var handleLoginRequest = function handleLoginRequest() {
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(serverLoginURL, {
+    axios__WEBPACK_IMPORTED_MODULE_3___default.a.post(serverLoginURL, {
       username: emailValue,
       password: passwordValue
     }).then(function (res) {
@@ -77711,7 +77784,7 @@ function LoginPanel() {
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     htmlFor: "password",
     className: "login-panel__password-title"
-  }, "Password", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, "Has\u0142o", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "password",
     id: "password",
     className: "login-panel__password-input",
@@ -77734,7 +77807,9 @@ function LoginPanel() {
       });
       setAlertMessage("");
     }
-  }, isRegisterStatus ? "zaloguj się!" : "zarejestruj się!")))));
+  }, isRegisterStatus ? "zaloguj się!" : "zarejestruj się!"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
+    className: "login-panel__credits"
+  }, "Created by: Bartosz Zygmunt & Mariusz D\u0105bal")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GetStarted__WEBPACK_IMPORTED_MODULE_1__["default"], null));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (LoginPanel);
@@ -77911,7 +77986,7 @@ function NotePopUp(_ref) {
       }
     }).then(function (res) {
       getGroupsData(category_id);
-      getSitesData();
+      getSitesData(groupIdActive);
       setIsEditOpen(false);
     })["catch"](function (err) {
       return console.log(err);
@@ -77943,7 +78018,9 @@ function NotePopUp(_ref) {
     onChange: function onChange(e) {
       return setTextValue(e.target.value);
     }
-  }) : note);
+  }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "note-pop-up__text-result"
+  }, note));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (NotePopUp);
@@ -77996,7 +78073,8 @@ function PopUpPanel(_ref) {
         getSitesData: getSitesData,
         category_id: category_id,
         groupIdActive: groupIdActive,
-        setPopUpActiveType: setPopUpActiveType
+        setPopUpActiveType: setPopUpActiveType,
+        empty: popUpActiveType === "empty-group" ? true : false
       });
       break;
 
@@ -78144,7 +78222,7 @@ function SettingsPanel(_ref) {
     } else if (titleCategory.length < 3) {
       alertPopUp("Za krótka nazwa");
       return;
-    } else if (titleCategory.length > 15) {
+    } else if (titleCategory.length > 20) {
       alertPopUp("Za długa nazwa");
       return;
     } else if (fileInput.size > 5000000) {
@@ -78179,7 +78257,7 @@ function SettingsPanel(_ref) {
     if (titleCategory.length > 0 && titleCategory.length < 3) {
       alertPopUp("Za krótka nazwa");
       return;
-    } else if (titleCategory.length > 15) {
+    } else if (titleCategory.length > 20) {
       alertPopUp("Za długa nazwa");
       return;
     } else if (fileInput.size > 5000000) {
@@ -78229,7 +78307,7 @@ function SettingsPanel(_ref) {
     var text = "";
 
     if (isRemoveImage) {
-      text = "Wybrano usuwanie karty";
+      text = "Wybrano usuwanie zdjęcia";
     } else if (fileInput) {
       text = "Wybrano zdjęcie dla karty:";
     }
@@ -78362,9 +78440,10 @@ function SiteItem(_ref) {
       groupIdActive = _ref.groupIdActive;
   var url = siteData.url,
       name = siteData.name,
-      updateTime = siteData.updateTime,
+      updated_at = siteData.updated_at,
       id = siteData.id,
-      important = siteData.important;
+      important = siteData.important,
+      notes = siteData.notes;
 
   var handleChangeImportantIcon = function handleChangeImportantIcon() {
     var serverCategoriesURL = "/api/categories";
@@ -78407,11 +78486,13 @@ function SiteItem(_ref) {
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faBookmark"]
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, updateTime), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: "site__name"
   }, name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "site__update-time"
-  }, updateTime), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "site__notes"
+  }, notes), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "site__updated-time"
+  }, "Last update: ", updated_at), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     onClick: function onClick(e) {
       return e.stopPropagation();
     },
@@ -78525,7 +78606,7 @@ function SitePopUp(_ref) {
     }).then(function (res) {
       setPopUpActiveType(false);
       getGroupsData(category_id);
-      getSitesData();
+      getSitesData(groupIdActive);
     })["catch"](function (err) {
       return console.log(err);
     });
@@ -78542,7 +78623,7 @@ function SitePopUp(_ref) {
     }).then(function (res) {
       setPopUpActiveType(false);
       getGroupsData(category_id);
-      getSitesData();
+      getSitesData(groupIdActive);
     })["catch"](function (err) {
       return console.log(err);
     });
@@ -78559,7 +78640,7 @@ function SitePopUp(_ref) {
     }).then(function (res) {
       setPopUpActiveType(false);
       getGroupsData(category_id);
-      getSitesData();
+      getSitesData(groupIdActive);
     })["catch"](function (err) {
       return console.log(err);
     });
@@ -78618,7 +78699,7 @@ function SitePopUp(_ref) {
     onSubmit: function onSubmit(e) {
       e.preventDefault();
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+  }, !deleteAlertStatus && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     htmlFor: "site-name",
     className: "site-pop-up__name",
     disabled: deleteAlertStatus && true,
@@ -78681,7 +78762,7 @@ function SitePopUp(_ref) {
     style: {
       opacity: deleteAlertStatus && 0.5
     }
-  })), alertMessage && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }))), alertMessage && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "site-pop-up__alert",
     style: {
       opacity: 1,
@@ -78695,9 +78776,6 @@ function SitePopUp(_ref) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faCheck"]
   })), popUpActiveType === "site" && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    style: {
-      color: deleteAlertStatus && "rgba(255, 0, 0, .5)"
-    },
     className: "site-pop-up__delete-icon",
     onClick: function onClick() {
       deleteAlertStatus ? setAlertMessage("") : setAlertMessage("Na pewno chcesz usunąć stronę?");
@@ -78706,7 +78784,7 @@ function SitePopUp(_ref) {
       });
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
-    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faTrashAlt"]
+    icon: !deleteAlertStatus ? _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faTrashAlt"] : _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faShare"]
   })))));
 }
 
@@ -79004,6 +79082,36 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/postcss-loader/src??ref--7-2!../../node_modules/sass-loader/lib/loader.js??ref--7-3!./EmptySiteItem.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/EmptySiteItem.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/sass/GetStarted.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/GetStarted.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/postcss-loader/src??ref--7-2!../../node_modules/sass-loader/lib/loader.js??ref--7-3!./GetStarted.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/GetStarted.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 

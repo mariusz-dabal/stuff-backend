@@ -36,7 +36,7 @@ function NotePopUp({
       })
       .then(res => {
         getGroupsData(category_id);
-        getSitesData();
+        getSitesData(groupIdActive);
         setIsEditOpen(false);
       })
       .catch(err => console.log(err));
@@ -67,7 +67,7 @@ function NotePopUp({
           onChange={e => setTextValue(e.target.value)}
         />
       ) : (
-        note
+        <p className="note-pop-up__text-result">{note}</p>
       )}
     </div>
   );

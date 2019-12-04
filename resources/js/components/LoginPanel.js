@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import GetStarted from "./GetStarted";
 import "../../sass/LoginPanel.scss";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
@@ -85,7 +86,7 @@ function LoginPanel() {
             />
           </label>
           <label htmlFor="password" className="login-panel__password-title">
-            Password
+            Hasło
             <input
               type="password"
               id="password"
@@ -111,7 +112,11 @@ function LoginPanel() {
             </span>
           </p>
         </form>
+        <footer className="login-panel__credits">
+          Created by: Bartosz Zygmunt & Mariusz Dąbal
+        </footer>
       </div>
+      <GetStarted />
     </div>
   );
 }
