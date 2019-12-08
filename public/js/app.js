@@ -16063,7 +16063,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.get-started {\n  padding: 30px 15px 15px;\n  width: 100%;\n  min-height: 100vh;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  border-radius: 0 10px 10px 0;\n  color: #61889c;\n}\n@media (min-width: 768px) {\n  .get-started {\n    overflow-Y: scroll;\n  }\n}\n@media (min-width: 1200px) {\n  .get-started {\n    flex-direction: row;\n    flex-wrap: wrap;\n    justify-content: center;\n  }\n}\n.get-started__about {\n  color: white;\n  text-align: center;\n  width: 100%;\n  text-transform: uppercase;\n  font-weight: 300;\n  font-size: 2.25rem;\n  background: rgba(97, 136, 156, 0.9);\n  border-radius: 10px;\n  padding: 15px;\n}\n@media (min-width: 1200px) {\n  .get-started__about {\n    width: 100%;\n  }\n}\n.get-started img {\n  width: 100%;\n  display: block;\n}\n.get-started__step {\n  margin-top: 15px;\n  text-align: center;\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  flex-direction: column;\n}\n@media (min-width: 1200px) {\n  .get-started__step {\n    width: 50%;\n    height: 450px;\n    margin-bottom: 35%;\n    margin-top: 0;\n  }\n}\n.get-started__title {\n  width: 100%;\n  font-size: 1.85rem;\n  font-weight: 500;\n  text-shadow: 1px 1px 1.5px rgba(255, 255, 255, 0.8);\n  margin: 20px;\n}\n@media (min-width: 768px) {\n  .get-started__title {\n    font-size: 2.25rem;\n  }\n}\n.get-started__gif {\n  border-radius: 13px;\n  overflow: hidden;\n  margin: 20px;\n  width: 80%;\n  max-width: 450px;\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.get-started {\n  padding: 30px 15px 15px;\n  width: 100%;\n  min-height: 100vh;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  border-radius: 0 10px 10px 0;\n  color: #61889c;\n}\n@media (min-width: 768px) {\n  .get-started {\n    overflow-Y: scroll;\n  }\n}\n@media (min-width: 1200px) {\n  .get-started {\n    flex-direction: row;\n    flex-wrap: wrap;\n    justify-content: center;\n    align-items: flex-start;\n  }\n}\n.get-started__about {\n  color: white;\n  text-align: center;\n  width: 100%;\n  text-transform: uppercase;\n  font-weight: 300;\n  font-size: 2.25rem;\n  background: rgba(97, 136, 156, 0.9);\n  border-radius: 10px;\n  padding: 15px;\n}\n@media (min-width: 1200px) {\n  .get-started__about {\n    width: 100%;\n  }\n}\n.get-started img {\n  width: 100%;\n  display: block;\n}\n.get-started__step {\n  margin-top: 50px;\n  text-align: center;\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: flex-start;\n  flex-direction: column;\n}\n@media (min-width: 1200px) {\n  .get-started__step {\n    width: 50%;\n    height: 450px;\n    margin-bottom: 10%;\n    margin-top: 0;\n  }\n}\n.get-started__title {\n  margin-top: 10px;\n  width: 100%;\n  font-size: 1.7rem;\n  font-weight: 500;\n  text-shadow: 1px 1px 1.5px rgba(255, 255, 255, 0.8);\n}\n@media (min-width: 768px) {\n  .get-started__title {\n    font-size: 2rem;\n  }\n}\n.get-started__gif {\n  border-radius: 13px;\n  overflow: hidden;\n  margin: 20px;\n  width: 80%;\n  max-width: 450px;\n}", ""]);
 
 // exports
 
@@ -16158,7 +16158,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@-webkit-keyframes buttonFlash {\n  0% {\n    left: -125%;\n  }\n  10% {\n    left: -125%;\n  }\n  100% {\n    left: 125%;\n  }\n}\n@keyframes buttonFlash {\n  0% {\n    left: -125%;\n  }\n  10% {\n    left: -125%;\n  }\n  100% {\n    left: 125%;\n  }\n}\n.login-panel {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  min-height: 100vh;\n  color: white;\n  flex-direction: column;\n}\n@media (min-width: 768px) {\n  .login-panel {\n    margin: 0 auto;\n    max-width: 1200px;\n    height: 100vh;\n    flex-direction: row;\n    justify-content: flex-start;\n    overflow: hidden;\n  }\n}\n.login-panel__container {\n  background: rgba(97, 136, 156, 0.9);\n  transition: background 0.2s;\n  height: 100vh;\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  text-align: center;\n  align-items: center;\n}\n@media (min-width: 768px) {\n  .login-panel__container {\n    border-radius: 10px 0 0 10px;\n    max-width: 350px;\n  }\n}\n.login-panel__form {\n  height: 95%;\n  width: 100%;\n  margin-top: 30px;\n  margin-bottom: 20vh;\n  display: flex;\n  flex-wrap: wrap;\n  flex-direction: column;\n  justify-content: space-evenly;\n  align-items: center;\n}\n.login-panel__title {\n  width: 100%;\n  margin: 0;\n  font-weight: 900;\n  text-align: center;\n  font-size: 5rem;\n  position: relative;\n}\n@media (min-width: 768px) {\n  .login-panel__title {\n    font-size: 4rem;\n  }\n}\n.login-panel__title:after {\n  content: \"\";\n  position: absolute;\n  top: calc(100% + 20px);\n  left: 50%;\n  height: 1px;\n  width: 80%;\n  background: rgba(255, 255, 255, 0.2);\n  transform: translate(-50%, -50%);\n}\n.login-panel__email-title, .login-panel__name-title, .login-panel__password-title {\n  display: block;\n  font-size: 1.5rem;\n}\n.login-panel__email-input, .login-panel__name-input, .login-panel__password-input {\n  color: darkgrey;\n  width: 100%;\n  padding: 7.5px;\n  display: block;\n  margin: 10px 0;\n  max-width: 300px;\n  font-size: 1.5rem;\n  border: 1px solid white;\n  border-radius: 5px;\n  background: lightgrey;\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.25);\n  transition: box-shadow 0.2s;\n}\n.login-panel__email-input:focus, .login-panel__name-input:focus, .login-panel__password-input:focus {\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.35);\n}\n.login-panel__email-input::-webkit-input-placeholder, .login-panel__name-input::-webkit-input-placeholder, .login-panel__password-input::-webkit-input-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input::-moz-placeholder, .login-panel__name-input::-moz-placeholder, .login-panel__password-input::-moz-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input:-ms-input-placeholder, .login-panel__name-input:-ms-input-placeholder, .login-panel__password-input:-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input::-ms-input-placeholder, .login-panel__name-input::-ms-input-placeholder, .login-panel__password-input::-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input::placeholder, .login-panel__name-input::placeholder, .login-panel__password-input::placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__login-button {\n  background: none;\n  max-width: 500px;\n  font-size: 2rem;\n  padding: 10px 35px;\n  border-radius: 10px;\n  border: 3px solid white;\n  cursor: pointer;\n  transition: background 0.2s, color 0.2s, box-shadow 0.1s;\n  color: white;\n  position: relative;\n  overflow: hidden;\n  mix-blend-mode: lighten;\n}\n.login-panel__login-button::before {\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.3), transparent);\n  position: absolute;\n  top: 0;\n  left: -100%;\n  transform-origin: 0 0;\n  -webkit-animation: buttonFlash 5s infinite;\n          animation: buttonFlash 5s infinite;\n  mix-blend-mode: exclusion;\n}\n.login-panel__login-button:hover {\n  background: rgba(97, 136, 156, 0.9);\n}\n.login-panel__login-button:active {\n  background: rgba(97, 136, 156, 0.9);\n  box-shadow: inset 2px -2px 2px rgba(0, 0, 0, 0.3);\n}\n.login-panel__sign-title {\n  font-size: 1.5rem;\n  padding: 0 20px;\n  color: rgba(255, 255, 255, 0.85);\n  position: relative;\n}\n.login-panel__sign-title:after {\n  content: \"\";\n  position: absolute;\n  bottom: calc(100% + 25px);\n  left: 50%;\n  height: 1px;\n  width: 80%;\n  background: rgba(255, 255, 255, 0.15);\n  transform: translate(-50%, -50%);\n}\n.login-panel__sign-link {\n  text-decoration: none;\n  font-weight: 700;\n  cursor: pointer;\n}\n.login-panel__sign-link:hover {\n  text-decoration: underline;\n}\n.login-panel__alert {\n  font-size: 1.5rem;\n  font-weight: 700;\n  color: rgba(255, 100, 100, 0.7);\n}\n.login-panel__credits {\n  width: 100%;\n  opacity: 0.75;\n  font-size: 1.2rem;\n  margin-bottom: 25px;\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@-webkit-keyframes buttonFlash {\n  0% {\n    left: -125%;\n  }\n  10% {\n    left: -125%;\n  }\n  100% {\n    left: 125%;\n  }\n}\n@keyframes buttonFlash {\n  0% {\n    left: -125%;\n  }\n  10% {\n    left: -125%;\n  }\n  100% {\n    left: 125%;\n  }\n}\n.login-panel {\n  display: flex;\n  justify-content: center;\n  width: 100%;\n  min-height: 100vh;\n  color: white;\n  flex-direction: column;\n}\n@media (min-width: 768px) and (min-height: 768px) {\n  .login-panel {\n    margin: 0 auto;\n    max-width: 1200px;\n    height: 100vh;\n    flex-direction: row;\n    justify-content: flex-start;\n    overflow: hidden;\n  }\n}\n.login-panel__container {\n  background: rgba(97, 136, 156, 0.9);\n  transition: background 0.2s;\n  width: 100%;\n  padding-top: 40px;\n  display: flex;\n  flex-direction: column;\n  text-align: center;\n  align-items: center;\n}\n@media (min-width: 768px) and (min-height: 768px) {\n  .login-panel__container {\n    border-radius: 10px 0 0 10px;\n    max-width: 350px;\n  }\n}\n.login-panel__form {\n  height: 95%;\n  width: 100%;\n  padding-top: 20px;\n  padding-bottom: 40px;\n  display: flex;\n  flex-wrap: wrap;\n  flex-direction: column;\n  justify-content: space-evenly;\n  align-items: center;\n  padding-left: 15px;\n  padding-right: 15px;\n}\n.login-panel__title {\n  width: 100%;\n  margin: 0;\n  font-weight: 900;\n  text-align: center;\n  font-size: 5rem;\n  position: relative;\n  margin-bottom: 10px;\n}\n@media (min-width: 768px) {\n  .login-panel__title {\n    font-size: 4rem;\n  }\n}\n.login-panel__email-title, .login-panel__name-title, .login-panel__password-title {\n  display: block;\n  font-size: 1.5rem;\n  margin-top: 20px;\n  margin-bottom: 20px;\n}\n.login-panel__email-input, .login-panel__name-input, .login-panel__password-input {\n  color: darkgrey;\n  width: 100%;\n  padding: 7.5px;\n  display: block;\n  margin: 10px 0;\n  max-width: 300px;\n  font-size: 1.5rem;\n  border: 1px solid white;\n  border-radius: 5px;\n  background: #dee6eb;\n  box-shadow: inset 1px -1px 1px darkgray;\n  transition: box-shadow 0.2s;\n}\n.login-panel__email-input:focus, .login-panel__name-input:focus, .login-panel__password-input:focus {\n  box-shadow: inset 1.5px -1.5px 1.5px darkgray;\n}\n.login-panel__email-input::-webkit-input-placeholder, .login-panel__name-input::-webkit-input-placeholder, .login-panel__password-input::-webkit-input-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input::-moz-placeholder, .login-panel__name-input::-moz-placeholder, .login-panel__password-input::-moz-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input:-ms-input-placeholder, .login-panel__name-input:-ms-input-placeholder, .login-panel__password-input:-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input::-ms-input-placeholder, .login-panel__name-input::-ms-input-placeholder, .login-panel__password-input::-ms-input-placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__email-input::placeholder, .login-panel__name-input::placeholder, .login-panel__password-input::placeholder {\n  color: rgba(0, 0, 0, 0.2);\n}\n.login-panel__login-button {\n  background: none;\n  max-width: 500px;\n  font-size: 2rem;\n  padding: 10px 35px;\n  border-radius: 10px;\n  border: 3px solid white;\n  cursor: pointer;\n  transition: background 0.2s, color 0.2s, box-shadow 0.1s;\n  color: white;\n  position: relative;\n  overflow: hidden;\n  mix-blend-mode: lighten;\n  margin-top: 20px;\n  margin-bottom: 50px;\n}\n.login-panel__login-button::before {\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.3), transparent);\n  position: absolute;\n  top: 0;\n  left: -100%;\n  transform-origin: 0 0;\n  -webkit-animation: buttonFlash 5s infinite;\n          animation: buttonFlash 5s infinite;\n  mix-blend-mode: exclusion;\n}\n.login-panel__login-button:hover {\n  background: rgba(97, 136, 156, 0.9);\n}\n.login-panel__login-button:active {\n  background: rgba(97, 136, 156, 0.9);\n  box-shadow: inset 2px -2px 2px rgba(0, 0, 0, 0.3);\n}\n.login-panel__sign-title {\n  font-size: 1.5rem;\n  padding: 0 20px;\n  color: rgba(255, 255, 255, 0.85);\n  position: relative;\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n.login-panel__line {\n  margin-top: 10px;\n  margin-bottom: 10px;\n  width: 100%;\n  height: 1px;\n  width: 80%;\n  background: rgba(255, 255, 255, 0.2);\n}\n.login-panel__sign-link {\n  margin-top: 10px;\n  margin-bottom: 10px;\n  text-decoration: none;\n  font-weight: 700;\n  cursor: pointer;\n}\n.login-panel__sign-link:hover {\n  text-decoration: underline;\n}\n.login-panel__alert {\n  font-size: 1.5rem;\n  font-weight: 700;\n  color: rgba(255, 100, 100, 0.85);\n}\n.login-panel__credits {\n  width: 100%;\n  opacity: 0.5;\n  font-size: 1.2rem;\n  padding-bottom: 20px;\n}", ""]);
 
 // exports
 
@@ -16196,7 +16196,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.note-pop-up {\n  padding: 40px;\n  font-size: 2rem;\n  line-height: 2.25rem;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  border-radius: 10px;\n  overflow-y: scroll;\n  padding-right: 50px;\n}\n.note-pop-up__edit-switch, .note-pop-up__accept-edit-switch {\n  position: absolute;\n  color: rgba(255, 255, 255, 0.6);\n  transition: color 0.1s;\n  cursor: pointer;\n}\n.note-pop-up__edit-switch:hover, .note-pop-up__accept-edit-switch:hover {\n  color: rgba(255, 255, 255, 0.8);\n}\n.note-pop-up__edit-switch {\n  top: 60px;\n  right: 9px;\n  font-size: 23px;\n}\n.note-pop-up__accept-edit-switch {\n  top: 110px;\n  right: 10px;\n  font-size: 25px;\n}\n.note-pop-up__text-area {\n  width: 100%;\n  height: 100%;\n  resize: none;\n  padding: 25px;\n  border-radius: 10px;\n  background: rgba(255, 255, 255, 0.3);\n  color: white;\n  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.35);\n  letter-spacing: 1.25px;\n}\n.note-pop-up__text-result {\n  white-space: pre-line;\n  overflow-y: scroll;\n  height: 100%;\n}", ""]);
+exports.push([module.i, "@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.note-pop-up {\n  font-size: 1.25rem;\n  line-height: 1.5rem;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  border-radius: 10px;\n  overflow-y: scroll;\n  padding: 15px 50px 15px 15px;\n}\n@media (min-width: 576px) {\n  .note-pop-up {\n    padding: 20px 50px 20px 20px;\n    font-size: 1.5rem;\n    line-height: 1.75rem;\n  }\n}\n@media (min-width: 768px) {\n  .note-pop-up {\n    padding: 25px 50px 25px 25px;\n    font-size: 1.75rem;\n    line-height: 2rem;\n  }\n}\n.note-pop-up__edit-switch, .note-pop-up__accept-edit-switch {\n  position: absolute;\n  color: rgba(255, 255, 255, 0.6);\n  transition: color 0.1s;\n  cursor: pointer;\n}\n.note-pop-up__edit-switch:hover, .note-pop-up__accept-edit-switch:hover {\n  color: rgba(255, 255, 255, 0.8);\n}\n.note-pop-up__edit-switch {\n  top: 60px;\n  right: 9px;\n  font-size: 23px;\n}\n.note-pop-up__accept-edit-switch {\n  top: 110px;\n  right: 10px;\n  font-size: 25px;\n}\n.note-pop-up__text-area {\n  width: 100%;\n  height: 100%;\n  resize: none;\n  padding: 15px;\n  border-radius: 10px;\n  background: rgba(255, 255, 255, 0.3);\n  color: white;\n  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.35);\n  letter-spacing: 1.25px;\n}\n.note-pop-up__text-result {\n  white-space: pre-line;\n  overflow-y: scroll;\n  height: 100%;\n}", ""]);
 
 // exports
 
@@ -16253,7 +16253,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "@charset \"UTF-8\";\n@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.site {\n  position: relative;\n  border-radius: 10px;\n  margin: 10px;\n  padding: 20px;\n  height: 150px;\n  cursor: pointer;\n  text-align: center;\n  transition: box-shadow 0.1s, background 0.1s;\n  color: grey;\n  -webkit-animation: bookmarkAnimTitle 0.5s 1 both;\n          animation: bookmarkAnimTitle 0.5s 1 both;\n  box-shadow: inset 2px -2px 2px white;\n  background: rgba(255, 255, 255, 0.7);\n  overflow: hidden;\n}\n.site__updated-time {\n  position: absolute;\n  bottom: 10px;\n  left: 15px;\n  transform: translateY(-50%);\n  opacity: 0.6;\n  font-size: 1rem;\n}\n.site__notes {\n  position: absolute;\n  text-align: left;\n  top: 45px;\n  bottom: 45px;\n  left: 80px;\n  right: 60px;\n  white-space: pre-wrap;\n  overflow: hidden;\n  font-size: 1.1rem;\n}\n.site__important-alert {\n  top: 5px;\n  padding: 0;\n  left: 10px;\n  position: absolute;\n  font-weight: 700;\n  font-size: 5rem;\n  color: #61889c;\n  cursor: pointer;\n  z-index: 1;\n  transition: opacity 0.2s;\n  opacity: 0.1;\n}\n.site__important-alert:hover {\n  opacity: 0.5;\n}\n.site__important-alert::after {\n  font-size: 1.5rem;\n  position: absolute;\n  left: 100%;\n  top: 50%;\n  content: \"Wa\\17Cne!\";\n  opacity: 0;\n  transition: transform 0.2s, opacity 0.2s;\n  transform: translate(-35px, -75%);\n}\n.site__important-alert:hover::after {\n  transform: translate(10px, -75%);\n  opacity: 0.75;\n}\n.site:hover {\n  box-shadow: inset 2px -2px 2px rgba(255, 255, 255, 0.3);\n  background: rgba(255, 255, 255, 0.75);\n}\n.site:active {\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.25);\n}\n.site__favicon {\n  width: 18px;\n  height: 18px;\n}\n.site__favicon img {\n  width: 100%;\n  position: relative;\n  z-index: 5;\n}\n.site__favicon img:hover + span::after {\n  opacity: 0.75;\n  transform: translate(10px, -75%);\n  content: \"Wa\\17Cne!\";\n}\n.site__favicon img:hover + span {\n  opacity: 0.5;\n}\n.site__name {\n  font-size: 1.5rem;\n  position: absolute;\n  top: 20px;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  text-align: center;\n}\n.site__link, .site__edit {\n  right: 0;\n  position: absolute;\n  width: 50px;\n  font-weight: 700;\n  font-size: 1.5rem;\n  padding: 1rem 20px 0 20px;\n  text-transform: uppercase;\n  text-decoration: none;\n  transition: box-shadow 0.1s, color 0.1s;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: #61889c;\n  color: lightgrey;\n  border: 0;\n  cursor: pointer;\n}\n.site__link > svg, .site__edit > svg {\n  transform: translateY(-50%);\n}\n.site__link:hover, .site__edit:hover {\n  box-shadow: inset 2px -2px 2px rgba(255, 255, 255, 0.3);\n  color: white;\n}\n.site__link:active, .site__edit:active {\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.25);\n}\n.site__edit {\n  top: 0;\n  bottom: 50%;\n  margin-bottom: 1px;\n}\n.site__link {\n  top: 50%;\n  bottom: 0;\n  margin-top: 1px;\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n@-webkit-keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes bookmarkAnimTitle {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.site {\n  position: relative;\n  border-radius: 10px;\n  margin: 10px;\n  padding: 20px;\n  height: 115px;\n  cursor: pointer;\n  text-align: center;\n  transition: box-shadow 0.1s, background 0.1s;\n  color: grey;\n  -webkit-animation: bookmarkAnimTitle 0.5s 1 both;\n          animation: bookmarkAnimTitle 0.5s 1 both;\n  box-shadow: inset 2px -2px 2px white;\n  background: rgba(255, 255, 255, 0.7);\n  overflow: hidden;\n}\n.site__updated-time {\n  position: absolute;\n  bottom: 10px;\n  left: 15px;\n  transform: translateY(-50%);\n  opacity: 0.6;\n  font-size: 1rem;\n}\n.site__notes {\n  position: absolute;\n  text-align: left;\n  top: 45px;\n  bottom: 45px;\n  left: 80px;\n  right: 60px;\n  white-space: pre-wrap;\n  overflow: hidden;\n  font-size: 1.1rem;\n}\n.site__important-alert {\n  top: 5px;\n  padding: 0;\n  left: 10px;\n  position: absolute;\n  font-weight: 700;\n  font-size: 5rem;\n  color: #61889c;\n  cursor: pointer;\n  z-index: 1;\n  transition: opacity 0.2s;\n  opacity: 0.1;\n}\n.site__important-alert:hover {\n  opacity: 0.5;\n}\n.site__important-alert::after {\n  font-size: 1.5rem;\n  position: absolute;\n  left: 100%;\n  top: 50%;\n  content: \"Wa\\17Cne!\";\n  opacity: 0;\n  transition: transform 0.2s, opacity 0.2s;\n  transform: translate(-35px, -75%);\n}\n.site__important-alert:hover::after {\n  transform: translate(10px, -75%);\n  opacity: 0.75;\n}\n.site:hover {\n  box-shadow: inset 2px -2px 2px rgba(255, 255, 255, 0.3);\n  background: rgba(255, 255, 255, 0.75);\n}\n.site:active {\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.25);\n}\n.site__favicon {\n  width: 18px;\n  height: 18px;\n}\n.site__favicon img {\n  width: 100%;\n  position: relative;\n  z-index: 5;\n}\n.site__favicon img:hover + span::after {\n  opacity: 0.75;\n  transform: translate(10px, -75%);\n  content: \"Wa\\17Cne!\";\n}\n.site__favicon img:hover + span {\n  opacity: 0.5;\n}\n.site__name {\n  font-size: 1.5rem;\n  position: absolute;\n  top: 20px;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  text-align: center;\n}\n.site__link, .site__edit {\n  right: 0;\n  position: absolute;\n  width: 50px;\n  font-weight: 700;\n  font-size: 1.5rem;\n  padding: 1rem 20px 0 20px;\n  text-transform: uppercase;\n  text-decoration: none;\n  transition: box-shadow 0.1s, color 0.1s;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background: #61889c;\n  color: lightgrey;\n  border: 0;\n  cursor: pointer;\n}\n.site__link > svg, .site__edit > svg {\n  transform: translateY(-50%);\n}\n.site__link:hover, .site__edit:hover {\n  box-shadow: inset 2px -2px 2px rgba(255, 255, 255, 0.3);\n  color: white;\n}\n.site__link:active, .site__edit:active {\n  box-shadow: inset 1.5px -1.5px 1.5px rgba(0, 0, 0, 0.25);\n}\n.site__edit {\n  top: 0;\n  bottom: 50%;\n  margin-bottom: 1px;\n}\n.site__link {\n  top: 50%;\n  bottom: 0;\n  margin-top: 1px;\n}", ""]);
 
 // exports
 
@@ -77139,23 +77139,23 @@ function GetStarted() {
     className: "get-started__about"
   }, "Organizer ulubionych stron internetowych"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "get-started__step"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "get-started__title get-started__title--first"
-  }, "1. Zak\u0142adaj karty z kategoriami"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "get-started__gif get-started__gif--first"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: gif1,
     alt: "Step 1"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "get-started__title get-started__title--first"
+  }, "1. Zak\u0142adaj karty z kategoriami")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "get-started__step"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "get-started__title get-started__title--second"
-  }, "2. Personalizuj grupy, strony i notatki"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "get-started__gif get-started__gif--second"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: gif2,
     alt: "Step 2"
-  }))));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "get-started__title get-started__title--second"
+  }, "2. Personalizuj grupy, strony i notatki")));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (GetStarted);
@@ -77719,8 +77719,17 @@ function LoginPanel() {
       }
     }).then(function () {
       return handleLoginRequest();
-    })["catch"](function (err) {
-      return setAlertMessage("coś nie działa");
+    })["catch"](function (_ref) {
+      var response = _ref.response;
+      var errors = response.data.errors;
+
+      if (errors.password) {
+        setAlertMessage(errors.password[0]);
+      } else if (errors.email) {
+        setAlertMessage(errors.email[0]);
+      } else {
+        setAlertMessage("Problemy z serwerem");
+      }
     });
   };
 
@@ -77732,8 +77741,14 @@ function LoginPanel() {
       var token = res.data.access_token;
       localStorage.setItem("access_token", token);
       history.push("/home");
-    })["catch"](function (err) {
-      err.response.status === 401 && setAlertMessage("Nieprawidłowy login lub haslo");
+    })["catch"](function (_ref2) {
+      var response = _ref2.response;
+
+      if (response.status === 401) {
+        setAlertMessage("Nieprawidłowy login lub hasło");
+      } else {
+        setAlertMessage("Problem z serwerem");
+      }
     });
   };
 
@@ -77756,7 +77771,9 @@ function LoginPanel() {
     onSubmit: handleSubmitLoginForm
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "login-panel__title"
-  }, "Zak\u0142adka"), isRegisterStatus && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+  }, "Zak\u0142adka"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "login-panel__line"
+  }), isRegisterStatus && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     htmlFor: "name",
     className: "login-panel__name-title"
   }, "Imi\u0119", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -77797,7 +77814,9 @@ function LoginPanel() {
     className: "login-panel__alert"
   }, alertMessage), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "login-panel__login-button"
-  }, isRegisterStatus ? "Zarejestruj" : "Zaloguj"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, isRegisterStatus ? "Zarejestruj" : "Zaloguj"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "login-panel__line"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "login-panel__sign-title"
   }, isRegisterStatus ? "Jeśli masz konto, " : "Jeśli nie masz konta, ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "login-panel__sign-link",
@@ -77855,18 +77874,13 @@ function HomePanel() {
       isLogged = _useState2[0],
       setIsLogged = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      _useState4 = _slicedToArray(_useState3, 2),
-      isMenuOpen = _useState4[0],
-      setIsMenuOpen = _useState4[1];
-
   var history = Object(react_router__WEBPACK_IMPORTED_MODULE_4__["useHistory"])();
 
   var handleLogout = function handleLogout() {
     var token = localStorage.getItem("access_token");
     axios__WEBPACK_IMPORTED_MODULE_5___default()({
       method: "post",
-      url: "/api/logout",
+      url: "https://jimmyspage.pl/api/logout",
       headers: {
         Accept: "application/json",
         Authorization: "Bearer " + token
@@ -77891,25 +77905,14 @@ function HomePanel() {
   }, "Zak\u0142adka", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
     className: "navbar__title-icon",
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faBookmark"]
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "navbar__menu"
-  }, isMenuOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "navbar__logout-btn"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faPowerOff"],
     onClick: function onClick() {
       return setIsLogged(false);
     }
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "navbar__hamburger-btn ".concat(isMenuOpen && "active-select"),
-    onClick: function onClick() {
-      return setIsMenuOpen(function (prev) {
-        return !prev;
-      });
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
-    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faBars"]
-  }))), !isLogged && handleLogout()));
+  })), !isLogged && handleLogout()));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (HomePanel);
@@ -78667,9 +78670,10 @@ function SitePopUp(_ref) {
       return setAlertMessage("Podaj prawidłowy adres URL");
     }
 
+    var urlWithPrefix = handlePrefixUrl();
     var formDataSite = new FormData();
     formDataSite.set("name", siteName);
-    formDataSite.append("url", URLValue);
+    formDataSite.append("url", urlWithPrefix);
     formDataSite.append("important", Number(importantStatus));
 
     if (popUpActiveType === "empty-site") {
@@ -78684,6 +78688,31 @@ function SitePopUp(_ref) {
     if (e.keyCode === 13) {
       editTypeChanger();
     }
+  };
+
+  var handlePrefixUrl = function handlePrefixUrl() {
+    var correctURL = "";
+    var wwwInc = URLValue.includes("www.");
+    var httpInc = URLValue.includes("http://");
+    var httpsInc = URLValue.includes("https://");
+    var allHttpInc = URLValue.includes("http://www.");
+    var allHttpsInc = URLValue.includes("https://www.");
+
+    if (wwwInc && !httpsInc && !httpInc) {
+      correctURL = "https://" + URLValue;
+    } else if ((httpsInc || httpInc) && !wwwInc) {
+      if (httpsInc) {
+        correctURL = URLValue.replace("https://", "https://www.");
+      } else if (httpInc) {
+        correctURL = URLValue.replace("http://", "http://www.");
+      }
+    } else if (!allHttpsInc && !allHttpInc) {
+      correctURL = "https://www." + URLValue;
+    } else {
+      correctURL = URLValue;
+    }
+
+    return correctURL;
   };
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
