@@ -20,7 +20,7 @@ function Card({
     activeSettings = activeStatus.activeSettings;
   }
 
-  const serverURL = "http://stuff.test/"; //jimmyspage.pl
+  const serverURL = "https://jimmyspage.pl";
   return (
     <li
       className={`card ${activeSettings &&

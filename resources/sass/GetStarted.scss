@@ -1,0 +1,71 @@
+@import './variables.scss';
+
+.get-started{
+  padding: 30px 15px 15px;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0 $borderRadius $borderRadius 0;
+  color: $mainUserColor;
+  @media (min-width: 768px) {
+    overflow-Y: scroll;
+  }
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  justify-content: center;
+  }
+  &__about{
+    color: white;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2.25rem;
+    background: rgba($mainUserColor, .9);
+    border-radius: $borderRadius;
+    padding: 15px;
+    @media (min-width: 1200px) {
+      width: 100%;
+    }
+  }
+  img{
+    width: 100%;
+    display: block;
+  }
+  &__step{
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    @media (min-width: 1200px) {
+      width: 50%;
+      height: 450px;
+      margin-bottom: 35%;
+      margin-top: 0;
+    }
+  }
+  &__title{
+    width: 100%;
+    font-size: 1.85rem;
+    font-weight:500;
+    text-shadow: 1px 1px 1.5px rgba(white, .8);
+    margin: 20px;
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+    }
+  }
+  &__gif{
+    border-radius: $borderRadius+3;
+    overflow: hidden;
+    margin: 20px;
+    width: 80%;
+    max-width: 450px;
+  }
+}
